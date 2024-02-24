@@ -1,245 +1,95 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.app')
+@section('title', 'Comment Jet | Homepage')
+@section('content')
+<div class="flex flex-col items-center container mx-auto py-6 mt-4">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Comment Jet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            font-family: "Inter";
-        }
-    </style>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-
-<body class="bg-[#F3F3F3]">
-    <header class="flex justify-between container mx-auto py-9">
-        <div class="flex items-center">
-            <div class="mr-10">
-                <img src="{{ asset('img/logo.png') }}" class="h-11" alt="">
-            </div>
-            <nav class="">
-                <div class="max-w-screen-xl px-4 py-3 mx-auto">
-                    <div class="flex items-center">
-                        <ul class="flex flex-row font-medium mt-0 space-x-10">
-                            <li>
-                                <a href="#"
-                                    class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Component</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Features</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Process</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">FAQ</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div>
-            <nav class="flex space-x-2">
-                <a href="#"
-                    class="text-black rounded-lg border-black border-2 bg-white py-[14px] px-6 text-base leading-[18px] font-semibold">Log
-                    In</a>
-                <a href="#"
-                    class="text-white rounded-lg bg-green-600 py-[14px] px-6 text-base leading-[18px] font-semibold">Sign
-                    Up</a>
-            </nav>
-        </div>
-    </header>
-    <div class="flex flex-col items-center container mx-auto py-6 mt-4">
-
-        <h2 class="font-semibold text-[64px] leading-[82px] text-center py-10">Fastest way to design and <br>complete
-            your project</h2>
-        <p class="leading-9 text-[22px]">Provide visual feedback and report bugs in seconds!</p>
-        <div class="flex space-x-2 py-6">
-            <a href="#"
-                class="text-white rounded-lg bg-green-600 py-[20px] px-6 text-[16px] leading-[18px] font-semibold">Get
-                Started</a>
-            <a href="#"
-                class="text-black rounded-lg border-black border-2 bg-white py-[20px] px-6 text-base leading-[18px] font-semibold">Watch
-                Demo</a>
-        </div>
-
-    </div>
-    <div class="container mx-auto">
-        <img src="{{ asset('img/homewindow.png') }}" class="w-full" alt="">
-    </div>
-    <div class="container mx-auto text-center py-[120px]">
-        <h2 class="font-semibold text-[64px] leading-[82px]">Unlock efficiency and <br>
-            streamline your projects <br>
-            with a single platform</h2>
-        <p class="text-[22px] leading-9">Revolutionize your workflow: experience the power of consolidation</p>
+    <h2 class="font-semibold text-[64px] leading-[82px] text-center py-10">Fastest way to design and <br>complete
+        your project</h2>
+    <p class="leading-9 text-[22px]">Provide visual feedback and report bugs in seconds!</p>
+    <div class="flex space-x-2 py-6">
+        <a href="#"
+            class="text-white rounded-lg bg-green-600 py-[20px] px-6 text-[16px] leading-[18px] font-semibold">Get
+            Started</a>
+        <a href="#"
+            class="text-black rounded-lg border-black border-2 bg-white py-[20px] px-6 text-base leading-[18px] font-semibold">Watch
+            Demo</a>
     </div>
 
-    <div class="grid grid-cols-2 items-center gap-32 container mx-auto">
-        <div class="col-span-2 lg:col-span-1 p-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
-            <img src="{{ asset('img/share-member.png') }}" class="p-6 w-full"
-                style="background: rgba(222, 220, 216, 1);" alt="">
-        </div>
-        <div class="col-span-2 lg:col-span-1">
-            <div class="flex flex-col space-y-6">
-                <h2 class="text-[52px] leading-[64px]">Share your design <br>in a second</h2>
-                <p class="text-[22px] leading-9">You have the power to copy the link generated by <br>our platform for
-                    quick access, or chart your own <br>unique project, inviting clients and members to set <br>sail
-                    alongside you on this exciting journey of <br>teamwork and achievement.</p>
-                <x-button.shadowbuttonlink title="Try it Now" route="#" />
-            </div>
+</div>
+<div class="container mx-auto">
+    <img src="{{ asset('img/homewindow.png') }}" class="w-full" alt="">
+</div>
+<div class="container mx-auto text-center py-[120px]">
+    <h2 class="font-semibold text-[64px] leading-[82px]">Unlock efficiency and <br>
+        streamline your projects <br>
+        with a single platform</h2>
+    <p class="text-[22px] leading-9">Revolutionize your workflow: experience the power of consolidation</p>
+</div>
+
+<div class="grid grid-cols-2 items-center gap-32 container mx-auto">
+    <div class="col-span-2 lg:col-span-1 p-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
+        <img src="{{ asset('img/share-member.png') }}" class="p-6 w-full"
+            style="background: rgba(222, 220, 216, 1);" alt="">
+    </div>
+    <div class="col-span-2 lg:col-span-1">
+        <div class="flex flex-col space-y-6">
+            <h2 class="text-[52px] leading-[64px]">Share your design <br>in a second</h2>
+            <p class="text-[22px] leading-9">You have the power to copy the link generated by <br>our platform for
+                quick access, or chart your own <br>unique project, inviting clients and members to set <br>sail
+                alongside you on this exciting journey of <br>teamwork and achievement.</p>
+            <x-button.shadowbuttonlink title="Try it Now" route="#" />
         </div>
     </div>
-    <div class="grid grid-cols-2 items-center gap-32 container mx-auto py-[120px]">
-        <div class="col-span-2 lg:col-span-1">
-            <div class="flex flex-col space-y-6">
-                <h2 class="text-[52px] leading-[64px]">Simple and divided <br>Timeline view </h2>
-                <p class="text-[22px] leading-9">You have the power to copy the link generated by <br>our platform for
-                    quick access, or chart your own <br>unique project, inviting clients and members to set <br>sail
-                    alongside you on this exciting journey of <br>teamwork and achievement.</p>
-                <x-button.shadowbuttonlink title="Try it Now" route="#" />
-            </div>
-        </div>
-        <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
-            <img src="{{ asset('img/homewindow.png') }}" class="pt-6 pl-6 h-[601px]"
-                style="background: rgba(222, 220, 216, 1);" alt="">
-        </div>
-
-    </div>
-    <div class="grid grid-cols-2 items-center gap-32 container mx-auto">
-        <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
-            <img src="{{ asset('img/feedback.png') }}" class="pt-6 pl-6 h-[645px]"
-                style="background: rgba(222, 220, 216, 1);" alt="">
-        </div>
-        <div class="col-span-2 lg:col-span-1">
-            <div class="flex flex-col space-y-6">
-                <h2 class="text-[52px] leading-[64px]">Just one tap to <br>give your feedback</h2>
-                <p class="text-[22px] leading-9">With just a single tap, you can effortlessly provide <br>your valuable
-                    feedback using our tool. No more <br>complexities, no more hassle—your thoughts and <br>insights are
-                    just a touch away, helping us create <br>better designs tailored to your vision.</p>
-                <x-button.shadowbuttonlink title="Try it Now" route="#" />
-            </div>
+</div>
+<div class="grid grid-cols-2 items-center gap-32 container mx-auto py-[120px]">
+    <div class="col-span-2 lg:col-span-1">
+        <div class="flex flex-col space-y-6">
+            <h2 class="text-[52px] leading-[64px]">Simple and divided <br>Timeline view </h2>
+            <p class="text-[22px] leading-9">You have the power to copy the link generated by <br>our platform for
+                quick access, or chart your own <br>unique project, inviting clients and members to set <br>sail
+                alongside you on this exciting journey of <br>teamwork and achievement.</p>
+            <x-button.shadowbuttonlink title="Try it Now" route="#" />
         </div>
     </div>
-    <div class="py-6 text-center ">
-        <h2 class="text-[64px] leading-[82px] font-medium">Tool that dedicated to <br>help you and make your <br>
-            project building faster</h2>
-        <p class="text-[18px] leading-8">Revolutionize your workflow: experience the power of consolidation</p>
+    <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
+        <img src="{{ asset('img/homewindow.png') }}" class="pt-6 pl-6 h-[601px]"
+            style="background: rgba(222, 220, 216, 1);" alt="">
     </div>
 
-    <div class="flex gap-4 container mx-auto">
-        <div class="rounded-3xl p-10 bg-[#E4E2DF]">
-            <div class="space-y-6 py-12">
-                <h2 class="text-[42px] leading-[54px] font-medium">A simple overview of <br>how project is going</h2>
-                <p class="text-[22px] leading-9">Stay Informed, Stay Ahead: Get a Snapshot of Your Project's <br>Journey
-                </p>
-                <x-button.shadowbuttonlink title="Try it Now" route="#" />
-            </div>
-            <div class="grid grid-cols-12 justify-between gap-4">
-                <div class="col-span-7  bg-white p-3 rounded-3xl">
-                    <div class=" flex flex-col gap-1 divide-y">
-                        <div class="space-y-2 ">
-                            <div class="flex justify-between">
-                                <span class=" text-gray-500 text-[10.03px] leading-3 font-semibold">Ordered by</span>
-                                <span class="text-[11.7px] leading-[14.316px] font-semibold">Dan Grabrial</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class=" text-gray-500 text-[10.03px] leading-3 font-semibold">Delivery
-                                    date</span>
-                                <span class="text-[11.7px] leading-[14.316px] font-semibold">May 10, 2:58 PM</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class=" text-gray-500 text-[10.03px] leading-3 font-semibold">Project
-                                    value</span>
-                                <span class="text-[11.7px] leading-[14.316px] font-semibold">£2000</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class=" text-gray-500 text-[10.03px] leading-3 font-semibold">Order number</span>
-                                <span class="text-[11.7px] leading-[14.316px] font-semibold">#F071BF2736783</span>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <div class="flex justify-between">
-                                <h2 class="font-semibold leading-[14.16px] text-[11.7px] my-2">
-                                    Track Order
-                                </h2>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                </svg>
+</div>
+<div class="grid grid-cols-2 items-center gap-32 container mx-auto">
+    <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
+        <img src="{{ asset('img/feedback.png') }}" class="pt-6 pl-6 h-[645px]"
+            style="background: rgba(222, 220, 216, 1);" alt="">
+    </div>
+    <div class="col-span-2 lg:col-span-1">
+        <div class="flex flex-col space-y-6">
+            <h2 class="text-[52px] leading-[64px]">Just one tap to <br>give your feedback</h2>
+            <p class="text-[22px] leading-9">With just a single tap, you can effortlessly provide <br>your valuable
+                feedback using our tool. No more <br>complexities, no more hassle—your thoughts and <br>insights are
+                just a touch away, helping us create <br>better designs tailored to your vision.</p>
+            <x-button.shadowbuttonlink title="Try it Now" route="#" />
+        </div>
+    </div>
+</div>
+<div class="py-6 text-center ">
+    <h2 class="text-[64px] leading-[82px] font-medium">Tool that dedicated to <br>help you and make your <br>
+        project building faster</h2>
+    <p class="text-[18px] leading-8">Revolutionize your workflow: experience the power of consolidation</p>
+</div>
 
-                            </div>
-
-                            <ol
-                                class="relative text-gray-500 border-s border-green-500 dark:border-gray-700 dark:text-gray-400">
-
-                                <li class="mb-7 ms-4">
-                                    <span
-                                        class="absolute flex items-center justify-center w-8 h-6 bg-white rounded-full -start-4 dark:ring-gray-900 dark:bg-gray-700">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-green-500">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                        </svg>
-
-                                    </span>
-                                    <h3 class="font-semibold text-[10px] leading-3 py-2">Order in progress</h3>
-                                </li>
-                                <li class="mb-7 ms-4">
-                                    <span
-                                        class="absolute flex items-center justify-center w-8 h-6 bg-white rounded-full -start-4 dark:ring-gray-900 dark:bg-gray-700">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                            fill="currentColor" class="bi bi-circle text-green-500"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                                        </svg>
-                                    </span>
-                                    <h3 class=" text-[10px] leading-3  py-2 font-semibold">Review delivery</h3>
-                                </li>
-                            </ol>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-span-5 bg-white p-4 rounded-3xl">
-                    <div class="flex justify-between my-2">
-                        <h2 class="font-semibold text-[11.7px] leading-[14.16px]">Order Details</h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-                        </svg>
-                    </div>
-                    <div class="bg-white border rounded-md flex justify-between p-2 my-6">
-                        <div class="flex justify-between space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4">
-                                <path
-                                    d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5H5.625Z" />
-                                <path
-                                    d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
-                            </svg>
-                            <span class=" text-[9.42px]">Final_File.zip</span>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="w-4 h-4">
-                            <path fill-rule="evenodd"
-                                d="M12 2.25a.75.75 0 0 1 .75.75v11.69l3.22-3.22a.75.75 0 1 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 1 1 1.06-1.06l3.22 3.22V3a.75.75 0 0 1 .75-.75Zm-9 13.5a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="space-y-2">
+<div class="flex gap-4 container mx-auto">
+    <div class="flex-1 rounded-3xl p-10 bg-[#E4E2DF]">
+        <div class="space-y-6 py-12">
+            <h2 class="text-[42px] leading-[54px] font-medium">A simple overview of <br>how project is going</h2>
+            <p class="text-[22px] leading-9">Stay Informed, Stay Ahead: Get a Snapshot of Your Project's <br>Journey
+            </p>
+            <x-button.shadowbuttonlink title="Try it Now" route="#" />
+        </div>
+        <div class="grid grid-cols-12 justify-between gap-4">
+            <div class="col-span-7  bg-white p-3 rounded-3xl">
+                <div class=" flex flex-col gap-1 divide-y">
+                    <div class="space-y-2 ">
                         <div class="flex justify-between">
                             <span class=" text-gray-500 text-[10.03px] leading-3 font-semibold">Ordered by</span>
                             <span class="text-[11.7px] leading-[14.316px] font-semibold">Dan Grabrial</span>
@@ -259,243 +109,644 @@
                             <span class="text-[11.7px] leading-[14.316px] font-semibold">#F071BF2736783</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="rounded-3xl p-10 bg-[#E4E2DF]">
-            <div class="space-y-6 py-12">
-                <h2 class="text-[42px] leading-[54px] font-medium">Help and solution with <br>note in each project</h2>
-                <p class="text-[22px] leading-9">Stay Informed, Stay Ahead: Get a Snapshot of Your Project's
-                    <br>Journey
-                </p>
-                <x-button.shadowbuttonlink title="Try it Now" route="#" />
-            </div>
-            <div class="grid grid-cols-12 justify-between gap-4 py-2">
-                <div class="col-span-7 bg-white p-3 rounded-3xl">
-                    <div class="flex justify-between p-1">
-                        <h2 class="font-semibold text-[12.42px] leading-[15px]">
-                            Private note
-                        </h2>
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 text-green-500 leading-[15px]">
-                                <path fill-rule="evenodd"
-                                    d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <h2 class=" font-semibold text-green-500 text-[12.42px] leading-[15px]">Add Note</h2>
-                        </div>
-                    </div>
-                    <div class="text-center py-6">
-                        <div class="flex justify-center">
-                            <img src="{{ asset('img/6189389_3207951 1.png') }}" alt="">
-                        </div>
-                        <span class="text-gray-300 font-semibold text-[10.65px] ">Nothing available now</span>
-                    </div>
-                </div>
-                <div class="col-span-5 bg-white p-4 rounded-3xl">
-                    <h2 class="font-semibold text-xs leading-4">Support</h2>
-                    <div class="divide-y">
-                        <div class="flex justify-between py-4 ">
-                            <div class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
-                                </svg>
-                                <div class="pl-2">
-                                    <h1 class="text-[11px] leading-[13px] font-semibold">FAQs</h1>
-                                    <p class="text-[9px] leading-3 text-gray-700">Find needed answers.</p>
-                                </div>
-                            </div>
+                    <div class="px-2">
+                        <div class="flex justify-between">
+                            <h2 class="font-semibold leading-[14.16px] text-[11.7px] my-2">
+                                Track Order
+                            </h2>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
+
                         </div>
-                        <div class="flex justify-between py-4 ">
-                            <div class="flex">
-                                <img src="{{ asset('img/support.png') }}" class="w-4 h-4" alt="">
-                                <div class="pl-2">
-                                    <h1 class="text-[11px] leading-[13px] font-semibold">FAQs</h1>
-                                    <p class="text-[9px] leading-3 text-gray-700">Find needed answers.</p>
-                                </div>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                            </svg>
-                        </div>
+
+                        <ol
+                            class="relative text-gray-500 border-s border-green-500 dark:border-gray-700 dark:text-gray-400">
+
+                            <li class="mb-7 ms-4">
+                                <span
+                                    class="absolute flex items-center justify-center w-8 h-6 bg-white rounded-full -start-4 dark:ring-gray-900 dark:bg-gray-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-green-500">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+
+                                </span>
+                                <h3 class="font-semibold text-[10px] leading-3 py-2">Order in progress</h3>
+                            </li>
+                            <li class="mb-7 ms-4">
+                                <span
+                                    class="absolute flex items-center justify-center w-8 h-6 bg-white rounded-full -start-4 dark:ring-gray-900 dark:bg-gray-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-circle text-green-500"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    </svg>
+                                </span>
+                                <h3 class=" text-[10px] leading-3  py-2 font-semibold">Review delivery</h3>
+                            </li>
+                        </ol>
+
                     </div>
                 </div>
 
             </div>
+            <div class="col-span-5 bg-white p-4 rounded-3xl">
+                <div class="flex justify-between my-2">
+                    <h2 class="font-semibold text-[11.7px] leading-[14.16px]">Order Details</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                </div>
+                <div class="bg-white border rounded-md flex justify-between p-2 my-6">
+                    <div class="flex justify-between space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4">
+                            <path
+                                d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5H5.625Z" />
+                            <path
+                                d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
+                        </svg>
+                        <span class=" text-[9.42px]">Final_File.zip</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-4 h-4">
+                        <path fill-rule="evenodd"
+                            d="M12 2.25a.75.75 0 0 1 .75.75v11.69l3.22-3.22a.75.75 0 1 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 1 1 1.06-1.06l3.22 3.22V3a.75.75 0 0 1 .75-.75Zm-9 13.5a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <span class=" text-gray-500 text-[10.03px] leading-3 font-semibold">Ordered by</span>
+                        <span class="text-[11.7px] leading-[14.316px] font-semibold">Dan Grabrial</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class=" text-gray-500 text-[10.03px] leading-3 font-semibold">Delivery
+                            date</span>
+                        <span class="text-[11.7px] leading-[14.316px] font-semibold">May 10, 2:58 PM</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class=" text-gray-500 text-[10.03px] leading-3 font-semibold">Project
+                            value</span>
+                        <span class="text-[11.7px] leading-[14.316px] font-semibold">£2000</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class=" text-gray-500 text-[10.03px] leading-3 font-semibold">Order number</span>
+                        <span class="text-[11.7px] leading-[14.316px] font-semibold">#F071BF2736783</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
 
-    <div class="container  mx-auto bg-[#9FE870] my-6 rounded-3xl">
-        <div class="grid grid-cols-12">
-            <div class="col-span-6 px-12 py-20 space-y-6">
-                <h3 class="text-[42px] leading-[54px] font-medium">A simple overview of <br> how project is going</h3>
-                <p>Stay Informed, Stay Ahead: Get a Snapshot of Your Project's Journey</p>
-                <x-button.shadowbuttonlink title="Try it Now" route="#" />
+
+    <div class="flex-1 rounded-3xl p-10 bg-[#E4E2DF]">
+        <div class="space-y-6 py-12">
+            <h2 class="text-[42px] leading-[54px] font-medium">Help and solution with <br>note in each project</h2>
+            <p class="text-[22px] leading-9">Stay Informed, Stay Ahead: Get a Snapshot of Your Project's
+                <br>Journey
+            </p>
+            <x-button.shadowbuttonlink title="Try it Now" route="#" />
+        </div>
+        <div class="grid grid-cols-12 justify-between gap-4 py-2">
+            <div class="col-span-7 bg-white p-3 rounded-3xl">
+                <div class="flex justify-between p-1">
+                    <h2 class="font-semibold text-[12.42px] leading-[15px]">
+                        Private note
+                    </h2>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-green-500 leading-[15px]">
+                            <path fill-rule="evenodd"
+                                d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <h2 class=" font-semibold text-green-500 text-[12.42px] leading-[15px]">Add Note</h2>
+                    </div>
+                </div>
+                <div class="text-center py-6">
+                    <div class="flex justify-center">
+                        <img src="{{ asset('img/6189389_3207951 1.png') }}" alt="">
+                    </div>
+                    <span class="text-gray-300 font-semibold text-[10.65px] ">Nothing available now</span>
+                </div>
             </div>
-            <div class="col-span-6 flex justify-end">
-                <img src="{{ asset('img/dashboard.png') }}" class="mt-14" alt="">
+            <div class="col-span-5 bg-white p-4 rounded-3xl">
+                <h2 class="font-semibold text-xs leading-4">Support</h2>
+                <div class="divide-y">
+                    <div class="flex justify-between py-4 ">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                            <div class="pl-2">
+                                <h1 class="text-[11px] leading-[13px] font-semibold">FAQs</h1>
+                                <p class="text-[9px] leading-3 text-gray-700">Find needed answers.</p>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-between py-4 ">
+                        <div class="flex">
+                            <img src="{{ asset('img/support.png') }}" class="w-4 h-4" alt="">
+                            <div class="pl-2">
+                                <h1 class="text-[11px] leading-[13px] font-semibold">FAQs</h1>
+                                <p class="text-[9px] leading-3 text-gray-700">Find needed answers.</p>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
+</div>
+</div>
 
-    <div class="container mx-auto text-center py-[120px]">
-        <h2 class="font-semibold text-[64px] leading-[82px]">How the magic unfolds: <br> Unveiling the inner workings
+<div class="container  mx-auto bg-[#9FE870] my-6 rounded-3xl">
+    <div class="grid grid-cols-12">
+        <div class="col-span-6 px-12 py-20 space-y-6">
+            <h3 class="text-[42px] leading-[54px] font-medium">A simple overview of <br> how project is going</h3>
+            <p>Stay Informed, Stay Ahead: Get a Snapshot of Your Project's Journey</p>
+            <x-button.shadowbuttonlink title="Try it Now" route="#" />
+        </div>
+        <div class="col-span-6 flex justify-end">
+            <img src="{{ asset('img/dashboard.png') }}" class="mt-14" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto text-center py-[120px]">
+    <h2 class="font-semibold text-[64px] leading-[82px]">How the magic unfolds: <br> Unveiling the inner workings
+    </h2>
+    <p class="text-[22px] leading-9">Discover the Alchemy Behind Our Seamless Process</p>
+</div>
+
+<div class="container mx-auto">
+    <div class="grid grid-cols-12 gap-6">
+        <div class="col-span-4 flex flex-col justify-center items-center ">
+            <img src="{{ asset('img/upload1.png') }}" alt="">
+            <h3 class="text-2xl font-semibold leading-[54px]">Upload Design</h3>
+            <p class="text-[18px] leading-8 text-center ">Upload your design and share the <br> generated link with
+                others</p>
+        </div>
+        <div class="col-span-4 flex flex-col justify-center items-center ">
+            <img src="{{ asset('img/Colaborate1.png') }}" alt="">
+            <h3 class="text-2xl font-semibold leading-[54px]">Colaborate</h3>
+            <p class="text-[18px] leading-8 text-center ">Collaborate with other members using <br> feedbex and get
+                feedback</p>
+        </div>
+        <div class="col-span-4 flex flex-col justify-center items-center ">
+            <img src="{{ asset('img/Success 1.png') }}" alt="">
+            <h3 class="text-2xl font-semibold leading-[54px]">Complete Project</h3>
+            <p class="text-[18px] leading-8 text-center ">After finalizing everything just upload final <br> file
+                to complete the project</p>
+        </div>
+    </div>
+</div>
+<hr class="mt-24">
+<section >
+    <div class=" container mx-auto flex justify-center">
+        <button class="flex space-x-1 bg-[#02A750] rounded-full px-3 py-2 text-white "
+            style="box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.5); border-width:3px">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd"
+                    d="M5.337 21.718a6.707 6.707 0 0 1-.533-.074.75.75 0 0 1-.44-1.223 3.73 3.73 0 0 0 .814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 0 1-4.246.997Z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span>Pricing</span>
+        </button>
+
+    </div>
+    <h2 class="text-6xl leading-[82px] text-center font-medium	">Best in your range <br>
+        start using now</h2>
+    <p class="text-2xl leading-9 font-normal text-center	">Revolutionize your workflow: experience the power of
+        consolidation</p>
+    {{-- pricing button start --}}
+    <div class="container flex justify-center mx-auto my-5">
+        <div class="px-2 text-xl leading-9 font-semibold">Buy Monthly</div>
+        <label class="inline-flex items-center mb-5 cursor-pointer my-2 px-2">
+            <input type="checkbox" value="" class="sr-only peer" checked>
+            <div
+                class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+            </div>
+            <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span>
+        </label>
+        <div class="px-2 text-blue-600  text-xl	leading-9 font-semibold	 ">Buy Annually <span
+                class="p-1 bg-[#02A75024] rounded-sm text-green-600 text-sm	">Save 14%</span></div>
+    </div>
+    {{-- pricing button end --}}
+
+
+
+</section>
+
+<section class="container mx-auto">
+    <div class="grid grid-cols-12 gap-3">
+        <div class="col-span-5 bg-[#E4E2DF] p-10 rounded-lg">
+            <h3 class="text-[42px] leading-[54px] font-medium mt-10">Professionals</h3>
+            <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
+            <div class="space-y-3">
+                <div class="flex items-center space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    <span>All Basic Services</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    <span>Create Project Timeline</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    <span>Up to 10 Members</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    <span>100 Quick Shares</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    <span>Up-to 100Mb File Upload</span>
+                </div>
+            </div>
+            <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                    </svg>
+                    <span class="text-2xl font-semibold">Free for Now</span>
+                </div>
+                <div>
+                    <x-button.shadowbuttonlink title="Subscribe" route="#" />
+                </div>
+            </div>
+        </div>
+        <div class="col-span-7 bg-[#9FE870] p-10 rounded-lg">
+            <button class="text-base border-black border rounded-full px-2 my-2 font-normal	">MOST PREMIUM</button>
+            <h3 class="text-[42px] leading-[54px] font-medium ">Unlimited</h3>
+            <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
+            <div class="flex gap-36">
+                <div class="col-1">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            <span>All Basic Services</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            <span>Create Project Timeline</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            <span>Up to 100 Members</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            <span>Unlimited Quick Shares</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            <span>Up-to 5Gb File Upload</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            <span>CommentJet Wallet</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            <span>Project Extension</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            <span>Project Milestone Support</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            <span>Weekly Updates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                    </svg>
+                    <span class="text-2xl font-semibold">19.50$ / Month</span>
+                </div>
+                <div>
+                    <x-button.shadowbuttonlink title="Subscribe" route="#" />
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<section class="container mx-auto">
+    <div class="container mx-auto text-center py-[120px] mt-14">
+        <h2 class="font-semibold text-[64px] leading-[82px]">Frequently asked questions
         </h2>
-        <p class="text-[22px] leading-9">Discover the Alchemy Behind Our Seamless Process</p>
+        <p class="text-[22px] leading-9 py-2">Please check the answers from us, If you have a quarry remaining
+            contact at <a href="#" class="text-[#0066FF]">support@feedbex.com</a></p>
     </div>
 
-    <div class="container mx-auto">
-        <div class="grid grid-cols-12 gap-6">
-            <div class="col-span-4 flex flex-col justify-center items-center ">
-                <img src="{{ asset('img/upload1.png') }}" alt="">
-                <h3 class="text-2xl font-semibold leading-[54px]">Upload Design</h3>
-                <p class="text-[18px] leading-8 text-center ">Upload your design and share the <br> generated link with
-                    others</p>
-            </div>
-            <div class="col-span-4 flex flex-col justify-center items-center ">
-                <img src="{{ asset('img/Colaborate1.png') }}" alt="">
-                <h3 class="text-2xl font-semibold leading-[54px]">Colaborate</h3>
-                <p class="text-[18px] leading-8 text-center ">Collaborate with other members using <br> feedbex and get
-                    feedback</p>
-            </div>
-            <div class="col-span-4 flex flex-col justify-center items-center ">
-                <img src="{{ asset('img/Success 1.png') }}" alt="">
-                <h3 class="text-2xl font-semibold leading-[54px]">Complete Project</h3>
-                <p class="text-[18px] leading-8 text-center ">After finalizing everything just upload final <br> file
-                    to complete the project</p>
-            </div>
-        </div>
-    </div>
-    <hr class="mt-24">
-    <section class=" ">
-        <div class=" container mx-auto flex justify-center">
-            <button class="flex space-x-1 bg-[#02A750] rounded-full px-3 py-2 text-white "
-                style="box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.5); border-width:3px">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <path fill-rule="evenodd"
-                        d="M5.337 21.718a6.707 6.707 0 0 1-.533-.074.75.75 0 0 1-.44-1.223 3.73 3.73 0 0 0 .814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 0 1-4.246.997Z"
-                        clip-rule="evenodd" />
+
+    <div id="accordion-flush" data-accordion="collapse"
+        data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+        data-inactive-classes="text-gray-500 dark:text-gray-400">
+        <h2 id="accordion-flush-heading-1">
+            <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
+                aria-controls="accordion-flush-body-1">
+                <span>How do I share my feedback using the design sharing tool?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
-                <span>Pricing</span>
+
             </button>
-
-        </div>
-        <h2 class="text-6xl leading-[82px] text-center font-medium	">Best in your range <br>
-            start using now</h2>
-        <p class="text-2xl leading-9 font-normal text-center	">Revolutionize your workflow: experience the power of
-            consolidation</p>
-        {{-- pricing button start --}}
-        <div class="container flex justify-center mx-auto my-5">
-            <div class="px-2 text-xl leading-9 font-semibold">Buy Monthly</div>
-            <label class="inline-flex items-center mb-5 cursor-pointer my-2 px-2">
-                <input type="checkbox" value="" class="sr-only peer" checked>
-                <div
-                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                </div>
-                <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span>
-            </label>
-            <div class="px-2 text-blue-600  text-xl	leading-9 font-semibold	 ">Buy Annually <span
-                    class="p-1 bg-[#02A75024] rounded-sm text-green-600 text-sm	">Save 14%</span></div>
-        </div>
-        {{-- pricing button end --}}
-
-
-
-    </section>
-    {{-- <section>
-        <div class="container mx-auto ">
-            <div class="grid grid-cols-12 gap-3 ">
-                <div class="col-span-5">
-                    <div class="w-[526px] h-[610px] bg-[#E4E2DF] rounded-lg ">
-                        <div class="">
-                            <h3 class="text-[42px] leading-[54px] font-medium ">Professionals</h3>
-                            <hr class="h-px my-8 bg-gray-800 border-0 dark:bg-gray-700">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-7">
-                    <div class="container w-[746px] h-[610px] bg-[#9FE870] rounded-lg ">
-                        <div class="mx-10 pt-16">
-                            <button class="text-base border-black border rounded-full px-2 my-1 font-normal	 ">MOST
-                                PREMIUM</button>
-                            <h3 class="text-[42px] leading-[54px] font-medium ">Unlimited</h3>
-                            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-                        </div>
-                    </div>
-                </div>
+        </h2>
+        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive
+                    components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.
+                </p>
+                <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a
+                        href="/docs/getting-started/introduction/"
+                        class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start
+                    developing websites even faster with components on top of Tailwind CSS.</p>
             </div>
         </div>
-    </section> --}}
-
-    <section class="container mx-auto">
-        <div class="grid grid-cols-12">
-            <div class="col-span-5 bg-[#E4E2DF] p-10 rounded-lg">
-                <h3 class="text-[42px] leading-[54px] font-medium ">Professionals</h3>
-                <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
-                <div class="space-y-3">
-                    <div class="flex items-center space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                          </svg>
-                        <span>All Basic Services</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                          </svg>
-                        <span>Create Project Timeline</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                          </svg>
-                        <span>Up to 10 Members</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                          </svg>
-                        <span>100 Quick Shares</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                          </svg>
-                        <span>Up-to 100Mb File Upload</span>
-                    </div>
-                </div>
-                <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
-                <div class="flex justify-between items-center">
-                    <div class="flex items-center space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
-                          </svg>
-                          <span class="text-lg font-semibold">Free for Now</span>
-                    </div>
-                    <div>
-                        <x-button.shadowbuttonlink title="Subscribe" route="#" />
-                    </div>
-                </div>
+        <h2 id="accordion-flush-heading-2">
+            <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                aria-controls="accordion-flush-body-2">
+                <span>Can I monitor the progress of my project easily?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </button>
+        </h2>
+        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed
+                    using the Figma software so everything you see in the library has a design equivalent in our
+                    Figma file.</p>
+                <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/"
+                        class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on
+                    the utility classes from Tailwind CSS and components from Flowbite.</p>
             </div>
-            <div class="col-span-7"></div>
         </div>
-    </section>
+        <h2 id="accordion-flush-heading-3">
+            <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                aria-controls="accordion-flush-body-3">
+                <span> What's the process for sharing projects with clients and team members?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </button>
+        </h2>
+        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                    from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                    Another difference is that Flowbite relies on smaller and standalone components, whereas
+                    Tailwind UI offers sections of pages.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                    Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                    using the best of two worlds.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li><a href="https://flowbite.com/pro/"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                    <li><a href="https://tailwindui.com/" rel="nofollow"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                </ul>
+            </div>
+        </div>
+        <h2 id="accordion-flush-heading-4">
+            <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
+                aria-controls="accordion-flush-body-4">
+                <span>Can you explain how the platform streamlines project management?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </button>
+        </h2>
+        <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                    from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                    Another difference is that Flowbite relies on smaller and standalone components, whereas
+                    Tailwind UI offers sections of pages.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                    Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                    using the best of two worlds.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li><a href="https://flowbite.com/pro/"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                    <li><a href="https://tailwindui.com/" rel="nofollow"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                </ul>
+            </div>
+        </div>
+        <h2 id="accordion-flush-heading-5">
+            <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-5" aria-expanded="false"
+                aria-controls="accordion-flush-body-5">
+                <span> How does the tool work?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </button>
+        </h2>
+        <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                    from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                    Another difference is that Flowbite relies on smaller and standalone components, whereas
+                    Tailwind UI offers sections of pages.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                    Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                    using the best of two worlds.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li><a href="https://flowbite.com/pro/"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                    <li><a href="https://tailwindui.com/" rel="nofollow"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                </ul>
+            </div>
+        </div>
+        <h2 id="accordion-flush-heading-6">
+            <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-6" aria-expanded="false"
+                aria-controls="accordion-flush-body-6">
+                <span>Is the feedback process user-friendly for both clients and team members?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </button>
+        </h2>
+        <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                    from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                    Another difference is that Flowbite relies on smaller and standalone components, whereas
+                    Tailwind UI offers sections of pages.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                    Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                    using the best of two worlds.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li><a href="https://flowbite.com/pro/"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                    <li><a href="https://tailwindui.com/" rel="nofollow"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                </ul>
+            </div>
+        </div>
+        <h2 id="accordion-flush-heading-7">
+            <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-7" aria-expanded="false"
+                aria-controls="accordion-flush-body-7">
+                <span> Can I access project details on the go?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </button>
+        </h2>
+        <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                    from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                    Another difference is that Flowbite relies on smaller and standalone components, whereas
+                    Tailwind UI offers sections of pages.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                    Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                    using the best of two worlds.</p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li><a href="https://flowbite.com/pro/"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                    <li><a href="https://tailwindui.com/" rel="nofollow"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center mt-16 ">
+        <div>
+            <x-button.shadowbuttonlink title="Load More" route="#" />
+        </div>
+    </div>
+</section>
+<section class="bg-[#565656] mt-40">
+    <div class="container mx-auto">
+        <div class=" text-center py-10">
+            <h2 class="font-semibold text-[64px] leading-[82px] text-white">Start using commentjet for <br><span
+                    class="text-[#9FE870]"> free for now</span>
+            </h2>
+            <p class="text-[22px] leading-9 py-2 text-white">Discover the Alchemy Behind Our Seamless Process</p>
+        </div>
+        <div class="flex justify-center  ">
+            <div>
+                <x-button.shadowbuttonlink title="Load More" route="#" classname="bg-[#9FE870]" />
+            </div>
+        </div>
+    </div>
+    <div class="flex gap-7 mt-16 ">
+      <div> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
+      <div> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
+      <div> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
+      <div> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
 
+    </div>
+</section>
 
-
-
-</body>
-
-</html>
+@endsection

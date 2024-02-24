@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\PricepageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,11 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/', [HomepageController::class, 'index'])->name('homepage');
+Route::get('price', [PricepageController::class, 'index'])->name('pricepage');
 Route::get('/test', function () {
     return view('test');
+});
+Route::get('/blog', function () {
+    return view('blog');
 });
 
 Route::middleware('auth')->group(function () {
