@@ -19,7 +19,9 @@
 
 <body class="bg-[#F3F3F3]">
     @include('layouts.header')
-    @yield('content')
+    <div class="px-5 lg:px-0">
+        @yield('content')
+    </div>
     @include('layouts.footer')
 </body>
 

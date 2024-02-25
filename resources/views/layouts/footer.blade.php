@@ -1,9 +1,9 @@
-<footer class="container mx-auto flex justify-between py-32">
-    <div class="space-y-4">
-        <img src="{{ asset('img/logo.png') }}" class="" alt="Comment Jet">
+<footer class="container mx-auto justify-between py-32">
+    <div class="">
+        <img src="{{ asset('img/logo.png') }}" class="pb-3" alt="Comment Jet">
         <span>© Copyright 2024. CommentJet All rights reserved.</span>
     </div>
-    <div class="space-y-3">
+    <div class="space-y-3 text-right">
         <div class="">
 
             <button type="button"

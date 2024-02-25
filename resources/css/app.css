@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.heading-two{
+    @apply  font-semibold text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px]
+}
