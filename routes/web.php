@@ -24,6 +24,21 @@ Route::get('/test', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
+Route::get('/condition', function () {
+    return view('condition');
+});
+Route::get('/articles', function () {
+    return view('articles');
+});
+Route::get('/about', function () {
+    return view('about');
+})->name('aboutpage');
+Route::get('/faq', function () {
+    return view('faq');
+})->name('faqpage');
+Route::get('/contuct-us', function () {
+    return view('contuct');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

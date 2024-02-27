@@ -1,7 +1,9 @@
 <header class="flex justify-between container mx-auto  py-9 px-5 lg:px-0">
     <div class="flex items-center">
         <div class="mr-10">
-            <img src="{{ asset('img/logo.png') }}" class="h-11" alt="">
+            <a href="{{route('homepage')}}">
+                <img src="{{ asset('img/logo.png') }}" class="h-11" alt="">
+            </a>
         </div>
         <nav class="hidden lg:block">
             <div class="max-w-screen-xl px-4 py-3 mx-auto">
@@ -20,7 +22,7 @@
                                 class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Process</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="{{route('faqpage')}}"
                                 class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">FAQ</a>
                         </li>
                     </ul>
