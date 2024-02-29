@@ -35,7 +35,7 @@
                 Time-Saving Mission!</h4>
         </div>
     </section>
-    <section class="lg:p-20 py-16 flex flex-col lg:flex-row justify-center items-center lg:space-x-10 mb-6" style="background-image: url('{{asset('img/about/bgdes.png')}}')">
+    <section class=" lg:p-20 py-16 flex flex-col lg:flex-row justify-center items-center lg:space-x-10 mb-6" style="background-image: url('{{asset('img/about/bgdes.png')}}')">
         <div class="lg:ml-36">
             <div class=" bg-white h-40 w-40 rounded-full flex items-center justify-center">
                 <img src="{{asset('img/logo.png')}}" class=" h-12" alt="">
@@ -73,6 +73,9 @@
         </div>
     </section>
     <section class="container mx-auto">
+
+
+
         <div id="accordion-flush" data-accordion="collapse"
             data-active-classes="bg-transparent dark:bg-gray-900 text-gray-900 dark:text-white"
             data-inactive-classes="text-gray-500 dark:text-gray-400">
@@ -89,6 +92,17 @@
 
                 </button>
             </h2>
+            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-0">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive
+                        components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.
+                    </p>
+                    <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a
+                            href="/docs/getting-started/introduction/"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start
+                        developing websites even faster with components on top of Tailwind CSS.</p>
+                </div>
+            </div>
             <h2 id="accordion-flush-heading-2">
                 <button type="button"
                     class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
@@ -101,6 +115,16 @@
                     </svg>
                 </button>
             </h2>
+            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed
+                        using the Figma software so everything you see in the library has a design equivalent in our
+                        Figma file.</p>
+                    <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/"
+                            class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on
+                        the utility classes from Tailwind CSS and components from Flowbite.</p>
+                </div>
+            </div>
             <h2 id="accordion-flush-heading-3">
                 <button type="button"
                     class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
@@ -113,6 +137,24 @@
                     </svg>
                 </button>
             </h2>
+            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                        from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                        Another difference is that Flowbite relies on smaller and standalone components, whereas
+                        Tailwind UI offers sections of pages.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                        Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                        using the best of two worlds.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                    <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                        <li><a href="https://flowbite.com/pro/"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                        <li><a href="https://tailwindui.com/" rel="nofollow"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                    </ul>
+                </div>
+            </div>
             <h2 id="accordion-flush-heading-4">
                 <button type="button"
                     class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
@@ -125,6 +167,24 @@
                     </svg>
                 </button>
             </h2>
+            <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                        from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                        Another difference is that Flowbite relies on smaller and standalone components, whereas
+                        Tailwind UI offers sections of pages.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                        Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                        using the best of two worlds.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                    <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                        <li><a href="https://flowbite.com/pro/"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                        <li><a href="https://tailwindui.com/" rel="nofollow"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                    </ul>
+                </div>
+            </div>
             <h2 id="accordion-flush-heading-5">
                 <button type="button"
                     class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
@@ -137,6 +197,24 @@
                     </svg>
                 </button>
             </h2>
+            <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                        from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                        Another difference is that Flowbite relies on smaller and standalone components, whereas
+                        Tailwind UI offers sections of pages.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                        Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                        using the best of two worlds.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                    <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                        <li><a href="https://flowbite.com/pro/"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                        <li><a href="https://tailwindui.com/" rel="nofollow"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                    </ul>
+                </div>
+            </div>
             <h2 id="accordion-flush-heading-6">
                 <button type="button"
                     class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
@@ -149,9 +227,27 @@
                     </svg>
                 </button>
             </h2>
+            <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                        from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                        Another difference is that Flowbite relies on smaller and standalone components, whereas
+                        Tailwind UI offers sections of pages.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                        Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                        using the best of two worlds.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                    <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                        <li><a href="https://flowbite.com/pro/"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                        <li><a href="https://tailwindui.com/" rel="nofollow"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                    </ul>
+                </div>
+            </div>
             <h2 id="accordion-flush-heading-7">
                 <button type="button"
-                    class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                    class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                     data-accordion-target="#accordion-flush-body-7" aria-expanded="false"
                     aria-controls="accordion-flush-body-7">
                     <span> Can I access project details on the go?</span>
@@ -161,6 +257,24 @@
                     </svg>
                 </button>
             </h2>
+            <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components
+                        from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                        Another difference is that Flowbite relies on smaller and standalone components, whereas
+                        Tailwind UI offers sections of pages.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                        Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
+                        using the best of two worlds.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                    <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                        <li><a href="https://flowbite.com/pro/"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                        <li><a href="https://tailwindui.com/" rel="nofollow"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="flex justify-center mt-16 ">
             <div>

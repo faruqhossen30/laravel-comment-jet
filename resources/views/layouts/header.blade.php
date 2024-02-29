@@ -10,20 +10,32 @@
                 <div class="flex items-center">
                     <ul class="flex flex-row font-medium mt-0 space-x-10">
                         <li>
-                            <a href="#"
-                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Component</a>
+                            <a href="{{route('homepage')}}"
+                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Home</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Features</a>
+                            <a href="{{route('aboutpage')}}"
+                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">About</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Process</a>
+                            <a href="{{route('termspage')}}"
+                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Terms</a>
+                        </li>
+                        <li>
+                            <a href="{{route('pricepage')}}"
+                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Price</a>
+                        </li>
+                        <li>
+                            <a href="{{route('articlespage')}}"
+                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Article</a>
                         </li>
                         <li>
                             <a href="{{route('faqpage')}}"
                                 class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="{{route('contactpage')}}"
+                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Contact</a>
                         </li>
                     </ul>
                 </div>

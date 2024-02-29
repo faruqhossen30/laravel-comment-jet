@@ -1,4 +1,4 @@
-<section class="bg-[#565656] mt-14 lg:mt-20">
+<section class="bg-[#565656] mt-14 lg:mt-20 pb-14 lg:pb-0">
     <div class="container mx-auto">
         <div class=" text-center py-10 px-3">
             <h2 class="font-semibold text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] text-white">Start using commentjet for <span
