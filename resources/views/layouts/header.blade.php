@@ -18,10 +18,6 @@
                                 class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">About</a>
                         </li>
                         <li>
-                            <a href="{{route('termspage')}}"
-                                class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Terms</a>
-                        </li>
-                        <li>
                             <a href="{{route('pricepage')}}"
                                 class="text-gray-900 dark:text-white hover:underline font-semibold text-base leading-[18px]">Price</a>
                         </li>
