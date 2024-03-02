@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -13,7 +14,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs=Blog::all();
+        $blogs = Blog::latest()->paginate(10);
         return view('admin.blog.index', compact('blogs'));
     }
 
@@ -22,7 +23,9 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('admin.blog.create');
+        $categories = Category::get();
+
+        return view('admin.blog.create', compact('categories'));
     }
 
     /**
@@ -31,9 +34,13 @@ class BlogController extends Controller
     public function store(Request $request)
     {
         // return $request->all();
-        $data=[
-            'title'=>$request->title,
-            'description'=>$request->description,
+        $request->validate(
+            ['title' => 'required', 'description' => 'required']
+        );
+        $data = [
+            'title' => $request->title,
+            'description' => $request->description,
+            'category_id' => $request->category_id,
 
         ];
 
@@ -56,8 +63,9 @@ class BlogController extends Controller
     public function edit(string $id)
     {
         $blog = Blog::where('id', $id)->first();
+        $categories = Category::get();
         // return $blog;
-        return view('admin.blog.edit', compact('blog'));
+        return view('admin.blog.edit', compact('categories','blog'));
     }
 
     /**
@@ -67,8 +75,8 @@ class BlogController extends Controller
     {
         // return $request->all();
         Blog::where('id', $id)->update([
-            'title'=>$request->title,
-            'description'=>$request->description,
+            'title' => $request->title,
+            'description' => $request->description,
         ]);
         return redirect()->route('blog.index');
     }
@@ -81,5 +89,4 @@ class BlogController extends Controller
         Blog::where('id', $id)->delete();
         return redirect()->route('blog.index');
     }
-
 }

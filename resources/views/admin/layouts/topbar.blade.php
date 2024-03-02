@@ -21,7 +21,7 @@
                     <img src="{{asset('img/logo.png')}}" class="h-6 mr-3"
                         alt="Comment Jet" />
                     <span
-                        class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white uppercase">Comment Jet</span>
+                        class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-500 dark:text-gray-200 uppercase">Comment Jet</span>
                 </a>
                 <form action="#" method="GET" class="hidden lg:block lg:pl-3.5">
                     <label for="topbar-search" class="sr-only">Search</label>

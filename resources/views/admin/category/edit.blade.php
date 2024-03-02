@@ -12,13 +12,8 @@
 			<form action="{{route('category.update', $category->id)}}" method="POST">
                 @csrf
                 @method('PUT')
-				<div>
-					<label for="simpleinput" class="text-gray-800 text-sm font-medium inline-block mb-2 w-full">Name:</label>
-					<input type="text" name="name" id="simpleinput" class="form-input w-full" placeholder="" value="{{$category->name}}">
-				</div>
-                <div class="py-2">
-                    <button type="submit" class="btn bg-primary text-white py-1 px-4 border rounded-md bg-blue-600">Save</button>
-                </div>
+				<x-form.input label="Category Name" name="name" value="{{$category->name}}" />
+				<x-form.submit-button />
 		</form>
 	</div>
 

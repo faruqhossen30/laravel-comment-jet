@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -13,7 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories= Category::all();
+        $categories= Category::latest()->paginate(10);
         return view('admin.category.index', compact('categories'));
     }
 
@@ -32,9 +33,13 @@ class CategoryController extends Controller
     {
         // return $request->all();
 
+        $request->validate([
+            'name'=>'required'
+        ]);
+
         $data=[
             'name'=> $request->name,
-            'slug'=> $request->name,
+            'slug'=> Str::slug($request->name),
         ];
 
         Category::create($data);
