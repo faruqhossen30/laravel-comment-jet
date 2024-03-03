@@ -13,8 +13,6 @@
                         <x-form.input name="title" label="Title" />
                         <x-form.select name="category_id" label="Select Category" :data="$categories" />
                         <x-form.textarea name="description" label="Description" />
-
-
                         <x-form.submit-button />
 
                     </form>

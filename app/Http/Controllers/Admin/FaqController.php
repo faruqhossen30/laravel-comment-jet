@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\FaqModel;
+use App\Models\Faq;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -14,7 +14,7 @@ class FaqController extends Controller
      */
     public function index()
     {
-        $faqs = FaqModel::latest()->paginate(10);
+        $faqs = Faq::latest()->paginate(10);
         return view('admin.faq.index',compact('faqs'));
     }
 
@@ -40,7 +40,7 @@ class FaqController extends Controller
             'answer'=>$request->answer,
             'user_id'=>Auth::user()->id
         ];
-        FaqModel::create($data);
+        Faq::create($data);
         return redirect()->route('faq.index');
     }
 
@@ -57,7 +57,7 @@ class FaqController extends Controller
      */
     public function edit(string $id)
     {
-        $faq=FaqModel::where('id',$id)->first();
+        $faq=Faq::where('id',$id)->first();
         return view('admin.faq.edit',compact('faq'));
     }
 
@@ -67,7 +67,7 @@ class FaqController extends Controller
     public function update(Request $request, string $id)
     {
 
-        FaqModel::where('id',$id)->update([
+        Faq::where('id',$id)->update([
             'question'=>$request->question,
             'answer'=>$request->answer
         ]);
@@ -79,7 +79,7 @@ class FaqController extends Controller
      */
     public function destroy(string $id)
     {
-        FaqModel::where('id',$id)->delete();
+        Faq::where('id',$id)->delete();
         return redirect()->route('faq.index');
     }
 }
@@ -90,7 +90,7 @@ class FaqController extends Controller
 // namespace App\Http\Controllers\admin;
 
 // use App\Http\Controllers\Controller;
-// use App\Models\FaqModel;
+// use App\Models\Faq;
 // use Illuminate\Http\Request;
 // use Illuminate\Support\Facades\Auth;
 
@@ -101,7 +101,7 @@ class FaqController extends Controller
 //      */
 //     public function index()
 //     {
-//         $faqs=FaqModel::all();
+//         $faqs=Faq::all();
 //         return view('admin.faq.index', compact('faqs'));
 //     }
 
@@ -126,7 +126,7 @@ class FaqController extends Controller
 
 //         ];
 
-//         FaqModel::create($data);
+//         Faq::create($data);
 
 //         return redirect()->route('faq.index');
 //     }
@@ -144,7 +144,7 @@ class FaqController extends Controller
 //      */
 //     public function edit(string $id)
 //     {
-//         $faq=FaqModel::where('id',$id)->first();
+//         $faq=Faq::where('id',$id)->first();
 //         return view('admin.faq.edit',compact('faq'));
 //     }
 
@@ -154,7 +154,7 @@ class FaqController extends Controller
 //     public function update(Request $request, string $id)
 //     {
 //         // return $request->all();
-//         FaqModel::where('id', $id)->update([
+//         Faq::where('id', $id)->update([
 //             'question'=>$request->question,
 //             'answer'=>$request->answer,
 //         ]);
@@ -166,7 +166,7 @@ class FaqController extends Controller
 //      */
 //     public function destroy(string $id)
 //     {
-//         FaqModel::where('id', $id)->delete();
+//         Faq::where('id', $id)->delete();
 //         return redirect()->route('faq.index');
 //     }
 // }
