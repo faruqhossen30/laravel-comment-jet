@@ -69,14 +69,11 @@
                         <button type="button"
                             class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
                             aria-controls="dropdown-products" data-collapse-toggle="dropdown-products">
-                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true">
-                                <path
-                                    d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z">
-                                </path>
-                            </svg>
-                            <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Products</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white">
+                                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clip-rule="evenodd" />
+                              </svg>
+
+                            <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Admin</span>
                             <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -86,12 +83,12 @@
                         </button>
                         <ul id="dropdown-products" class="hidden py-2 space-y-2">
                             <li>
-                                <a href="#"
-                                    class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Colors</a>
+                                <a href="{{route('admin.index')}}"
+                                    class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">All Admin</a>
                             </li>
                             <li>
                                 <a href="https://flowbite-admin-dashboard.vercel.app/layouts/sidebar/"
-                                    class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Sidebar</a>
+                                    class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group  hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Sidebar</a>
                             </li>
                         </ul>
                     </li>
@@ -119,6 +116,19 @@
                                 </path>
                             </svg>
                             <span class="ml-3" sidebar-toggle-item>Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('faq.index')}}"
+                            class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700 ">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true">
+                                <path
+                                    d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z">
+                                </path>
+                            </svg>
+                            <span class="ml-3" sidebar-toggle-item>FAQ</span>
                         </a>
                     </li>
                     <li>
