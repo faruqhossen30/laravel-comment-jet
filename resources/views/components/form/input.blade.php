@@ -1,4 +1,4 @@
-<div class="space-y-1">
+<div class="space-y-1 py-1">
     <label for="{{ $name }}" class="text-gray-500 dark:text-gray-500 text-sm font-medium"> {{ $label }}</label>
     <input id="{{ $name }}" type="{{ $type ?? 'text' }}" name="{{ $name }}"
         value="{{ $value ?? old($name) }}"

@@ -1,10 +1,13 @@
 @extends('admin.layouts.app')
 @section('breadcrumb')
+<div class="flex justify-between">
+
     <x-breadcrumb pageone="Blog" />
+    <x-button.button-plus route="{{route('blog.create')}}" title="Create Blog" />
+</div>
 @endsection
 @section('content')
 <div class="flex flex-row-reverse py-2">
-    <x-button.button-icon-link route="{{route('blog.create')}}" title="Create Blog" />
 </div>
     <div class="bg-white dark:bg-transparent">
         <div class="flex flex-col">

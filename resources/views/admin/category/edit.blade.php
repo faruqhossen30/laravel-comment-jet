@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 @section('breadcrumb')
-<x-breadcrumb pageone="Category" pageoneRoute="{{route('category.index')}}" pagetwo="Create"  />
+<x-breadcrumb pageone="Category" pageoneRoute="{{route('category.index')}}" pagetwo="Edit"  />
 @endsection
 @section('content')
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Spatie\Permission\Models\Role;
 
 class AdminController extends Controller
 {
@@ -13,9 +15,10 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $admins=User::latest()->paginate(10);
+
+        $admins = User::latest()->paginate(10);
         // return $admins;
-        return view('admin.admin.index',compact('admins'));
+        return view('admin.admin.index', compact('admins'));
     }
 
     /**
@@ -23,7 +26,8 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view('admin.admin.create');
+        $roles = Role::all();
+        return view('admin.admin.create', compact('roles'));
     }
 
     /**
@@ -31,19 +35,23 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
+
+        // return $request->all();
         $request->validate([
-            'name'=> 'required',
+            'name' => 'required',
             'email' => 'required',
-            'password' => 'required'
+            'password' => ['required', 'confirmed', 'min:4'],
         ]);
-        $data=[
-            'name'=>$request->name,
-            'email'=>$request->email,
-            'password'=>$request->password
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
 
         ];
         // return $data;
-        User::create($data);
+        $ids = array_map('intval', $request->role_ids);
+        $user = User::create($data);
+        $user->assignRole($ids);
         return redirect()->route('admin.index');
     }
 
@@ -60,8 +68,9 @@ class AdminController extends Controller
      */
     public function edit(string $id)
     {
-        $admin=User::where('id', $id)->first();
-        return view('admin.admin.edit',compact('admin'));
+        $admin = User::where('id', $id)->first();
+        $roles = Role::all();
+        return view('admin.admin.edit', compact('admin', 'roles'));
     }
 
     /**
@@ -69,10 +78,21 @@ class AdminController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        User::where('id',$id)->update([
-            'name'=>$request->name,
-            'email'=>$request->email
+        $ids = array_map('intval', $request->role_ids);
+        $admin = User::firstWhere('id', $id);
+
+        $admin->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+
         ]);
+
+        if ($request->role_ids) {
+            $admin->roles()->detach();
+            $admin->assignRole($ids);
+        }
+
         return redirect()->route('admin.index');
     }
 
@@ -81,7 +101,7 @@ class AdminController extends Controller
      */
     public function destroy(string $id)
     {
-        User::where('id',$id)->delete();
+        User::where('id', $id)->delete();
         return redirect()->route('admin.index');
     }
 }

@@ -1,15 +1,14 @@
 @extends('admin.layouts.app')
 @section('breadcrumb')
     <div class="flex justify-between">
-        <x-breadcrumb pageone="FAQ" />
-        <x-button.button-plus route="{{ route('faq.create') }}" title="Create FAQ" />
+        <x-breadcrumb pageone="Role" />
+        <x-button.button-plus route="{{ route('role.create') }}" title="Create Role" />
     </div>
 @endsection
 @section('content')
     <div class="flex flex-row-reverse py-2">
-
     </div>
-    <div class="bg-white dark:bg-transparent">
+    <div class="bg-white dark:bg-transparent ">
         <div class="flex flex-col">
             <div class="-m-1.5 overflow-x-auto">
                 <div class="p-1.5 min-w-full inline-block align-middle">
@@ -22,46 +21,45 @@
                                         S.N</th>
                                     <th scope="col"
                                         class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-400">
-                                        Question</th>
+                                        Name</th>
                                     <th scope="col"
                                         class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-400">
-                                        Answer</th>
+                                        Permission</th>
                                     <th scope="col"
                                         class="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase dark:text-gray-400">
                                         Action</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                                @forelse ($faqs as $faq)
+                                @forelse ($roles as $role)
                                     <tr>
-                                        <td
-                                            class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                                            {{ $faqs->firstItem() + $loop->index }}</td>
-                                        <td
-                                            class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                                            {{ $faq->question }}
+                                        <td class="px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
+                                            {{ $roles->firstItem() + $loop->index }}</td>
+                                        <td class="px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
+                                            {{ $role->name }}
                                         </td>
-                                        <td
-                                            class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                                            {{ $faq->answer }}
+                                        <td class="px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
+                                            @foreach ($role->permissions as $perm)
+                                                <x-badge title="{{ $perm->name }}" />
+                                            @endforeach
                                         </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
+                                        <td class="px-6 py-4 text-end text-sm font-medium  whitespace-nowrap">
 
-                                            <x-table.crudactionbutton route="faq" :id="$faq->id" />
+                                            <x-table.crudactionbutton route="role" :id="$role->id" />
                                         </td>
                                     </tr>
                                 @empty
-                                    <td colspan="3"
-                                        class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium text-gray-800 dark:text-gray-200">
-                                        No faq post found.
-                                    </td>
+                                    <tr>
+                                        <td colspan="4" class="text-gray-800 dark:text-gray-200 text-center py-4">No data
+                                            found</td>
+                                    </tr>
                                 @endforelse
 
                             </tbody>
                         </table>
                     </div>
                     <div class="py-4">
-                        {{ $faqs->links() }}
+                        {{ $roles->links() }}
                     </div>
                 </div>
             </div>

@@ -57,9 +57,11 @@
         }
     </script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    @stack('styles')
 </head>
 
-<body class="bg-gray-50 dark:bg-gray-800">
+<body class="bg-gray-50 dark:bg-gray-900">
 
     @include('admin.layouts.topbar')
 
@@ -79,14 +81,6 @@
     </div>
 
 
-
-    {{-- <script src="{{asset('assets/admin/js/app.bundle.js')}}"></script> --}}
-    {{-- <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/datepicker.min.js"></script> --}}
-
-    {{-- <script async defer src="https://buttons.github.io/buttons.js"></script> --}}
-    {{-- <script src="https://flowbite-admin-dashboard.vercel.app//app.bundle.js"></script> --}}
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/datepicker.min.js"></script> --}}
     <script>
         const sidebar = document.getElementById('sidebar');
 
@@ -163,6 +157,7 @@
 
         });
     </script>
+    @stack('scripts')
 </body>
 
 </html>
