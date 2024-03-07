@@ -6,7 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\Category;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Str;
+use Image;
 class BlogController extends Controller
 {
     /**
@@ -35,12 +36,25 @@ class BlogController extends Controller
     {
         // return $request->all();
         $request->validate(
-            ['title' => 'required', 'description' => 'required']
+            [
+                'title'        => 'required',
+                 'description' => 'required'
+            ]
         );
+
+        $thumbnailname = null;
+        if ($request->file('thumbnail')) {
+            $imagethumbnail = $request->file('thumbnail');
+            $extension = $imagethumbnail->getClientOriginalExtension();
+            $thumbnailname = Str::uuid() . '.' . $extension;
+            // Image::make($imagethumbnail)->save('uploads/portfolio/' . $thumbnailname);
+            $request->file('thumbnail')->move(public_path('uploads/blog/'), $thumbnailname);
+        }
         $data = [
-            'title' => $request->title,
+            'title'       => $request->title,
             'description' => $request->description,
             'category_id' => $request->category_id,
+            'thumbnail'   => $thumbnailname,
 
         ];
 
@@ -74,10 +88,57 @@ class BlogController extends Controller
     public function update(Request $request, string $id)
     {
         // return $request->all();
-        Blog::where('id', $id)->update([
-            'title' => $request->title,
+
+        $request->validate(
+            [
+                'title'        => 'required',
+                 'description' => 'required',
+                 'category_id' => 'required',
+            ]
+        );
+
+
+
+        $data = [
+            'title'       => $request->title,
             'description' => $request->description,
-        ]);
+            'category_id' => $request->category_id,
+        ];
+
+
+        $thumbnailname = null;
+        if ($request->file('thumbnail')) {
+            $imagethumbnail = $request->file('thumbnail');
+            $extension = $imagethumbnail->getClientOriginalExtension();
+            $thumbnailname = Str::uuid() . '.' . $extension;
+            $request->file('thumbnail')->move(public_path('uploads/blog/'), $thumbnailname);
+            $data['thumbnail'] = $thumbnailname;
+        }
+
+        Blog::where('id', $id)->update($data);
+
+
+
+        // if (!empty($request->file('portfolio_image'))) {
+        //     $captions = $request->captions;
+        //     // PortfolioImage::where('portfolio_id', $id)->delete();
+
+        //     foreach ($request->file('portfolio_image') as $index => $imagefile) {
+        //         $imagethumbnail = $imagefile;
+        //         $extension = $imagethumbnail->getClientOriginalExtension();
+        //         $thumbnailname = Str::uuid() . '.' . $extension;
+        //         // Image::make($imagethumbnail)->save('uploads/portfolio/image/' . $thumbnailname);
+        //         $request->file('portfolio_image')[$index]->move(public_path('uploads/portfolio/image/'), $thumbnailname);
+
+        //         Blog::create([
+        //             'portfolio_id' => $id,
+        //             'image' => $thumbnailname,
+        //             'caption' => $captions[$index],
+        //         ]);
+        //     }
+        // }
+
+
         return redirect()->route('blog.index');
     }
 
