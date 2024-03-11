@@ -5,7 +5,7 @@
     <section class=" container mx-auto justify-center mt-24 lg:mt-0">
 
         <h2
-            class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] text-center font-medium py-6 mx-auto">
+            class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] text-center font-medium py-6 mx-auto" data-aos="fade-down" data-aos-duration="2000">
             The digital content solution, for the best price.</h2>
         <p class="text-[18px] lg:text-2xl leading-7 lg:leading-9 font-normal text-center	">Revolutionize your workflow:
             experience the power of
@@ -36,7 +36,7 @@
 
     <section class="container mx-auto">
         <div class="grid grid-cols-12 gap-3">
-            <div class="col-span-12 lg:col-span-6 bg-[#E4E2DF] p-10 rounded-lg">
+            <div class="col-span-12 lg:col-span-6 bg-[#E4E2DF] p-10 rounded-lg" data-aos="fade-right" data-aos-duration="2000">
                 <h3 class="text-[42px] leading-[54px] font-medium mt-10">Professionals</h3>
                 <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
                 <div class="space-y-3">
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:block col-span-6 bg-[#9FE870] p-10 rounded-lg">
+            <div class="hidden lg:block col-span-6 bg-[#9FE870] p-10 rounded-lg" data-aos="fade-left" data-aos-duration="2000">
                 <button class="text-base border-black border rounded-full px-2 my-2 font-normal	">MOST PREMIUM</button>
                 <h3 class="text-[42px] leading-[54px] font-medium ">Unlimited</h3>
                 <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
@@ -185,7 +185,7 @@
     </section>
     {{-- table start  --}}
     <section class="container mx-auto mt-32 ">
-        <h3 class="text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] text-center font-medium my-4	">See full feature matrix</h3>
+        <h3 class="text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] text-center font-medium my-4	" data-aos="fade-down" data-aos-duration="2000">See full feature matrix</h3>
         <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
         <table class="w-full  ">
             <thead>

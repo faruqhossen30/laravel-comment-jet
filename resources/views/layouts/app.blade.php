@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <style>
         * {
             font-family: "Inter";
         }
     </style>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('styles')
 </head>
 
 <body class="bg-[#F3F3F3]">
@@ -23,6 +25,11 @@
         @yield('content')
     </div>
     @include('layouts.footer')
+    <script src="{{ asset('js/aos.js') }}"></script>
+    @stack('scripts')
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

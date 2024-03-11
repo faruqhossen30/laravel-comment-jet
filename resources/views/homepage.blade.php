@@ -4,7 +4,7 @@
     <section class="container mx-auto">
         <div class="flex flex-col items-center container mx-auto lg:py-6 lg:mt-4">
 
-            <h2
+            <h2 data-aos="fade-down" data-aos-duration="2000"
                 class="max-w-4xl font-semibold  text-center py-10 text-[38px] leading-[44px] lg:text-[64px] lg:leading-[82px]">
                 Fastest way to design and complete
                 your project</h2>
@@ -23,10 +23,10 @@
     </section>
 
     <section class="container mx-auto">
-        <img src="{{ asset('img/homewindow.png') }}" class="w-full" alt="">
+        <img data-aos="zoom-in" data-aos-duration="2000" src="{{ asset('img/homewindow.png') }}" class="w-full" alt="">
     </section>
     <section class="container mx-auto text-center py-[73px] lg:py-[120px]">
-        <h2
+        <h2 data-aos="fade-right" data-aos-duration="2000"
             class="heading-two max-w-4xl text-center text-[38px] leading-[44px] lg:text-[64px] lg:leading-[82px] inline-block">
             Unlock efficiency and streamline your projects with a single platform</h2>
         <p class=" text-[18px] lg:text-[22px] leading-7 lg:leading-9 pt-6">Revolutionize your workflow: experience the power
@@ -35,12 +35,12 @@
 
     <section class="container mx-auto">
         <div class="grid grid-cols-2 items-center gap-8 lg:gap-32">
-            <div class="col-span-2 lg:col-span-1 p-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
+            <div  data-aos="fade-right" data-aos-duration="2000" class="col-span-2 lg:col-span-1 p-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
                 <img src="{{ asset('img/share-member.png') }}" class="p-6 w-full"
                     style="background: rgba(222, 220, 216, 1);" alt="">
             </div>
             <div class="col-span-2 lg:col-span-1">
-                <div class="flex flex-col space-y-6">
+                <div data-aos="fade-left" data-aos-duration="2000" class="flex flex-col space-y-6">
                     <h2 class="text-[30px] lg:text-[52px] leading-10 lg:leading-[64px] font-medium">Share your design in a
                         second</h2>
                     <p class="text-[18px] lg:text-[22px] leading-7 lg:leading-9">You have the power to copy the link
@@ -55,7 +55,7 @@
 
     <section class="container mx-auto">
         <div class="grid grid-cols-2 items-center gap-8 lg:gap-32 container mx-auto py-[120px]">
-            <div class="col-span-2 lg:col-span-1 order-2 lg:order-1">
+            <div class="col-span-2 lg:col-span-1 order-2 lg:order-1" data-aos="fade-right" data-aos-duration="2000">
                 <div class="flex flex-col space-y-6">
                     <h2 class="text-[30px] lg:text-[52px] leading-10 lg:leading-[64px] font-medium">Simple and divided
                         Timeline view </h2>
@@ -66,7 +66,7 @@
                     <x-button.shadowbuttonlink title="Try it Now" route="#" />
                 </div>
             </div>
-            <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl order-1 lg:order-2"
+            <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl order-1 lg:order-2" data-aos="fade-left" data-aos-duration="2000"
                 style="background: rgba(222, 220, 216, 1);">
                 <img src="{{ asset('img/homewindow.png') }}" class="pt-6 pl-6 h-[601px]"
                     style="background: rgba(222, 220, 216, 1);" alt="">
@@ -77,11 +77,11 @@
 
     <section class="container mx-auto">
         <div class="grid grid-cols-2 items-center gap-8 lg:gap-32 container mx-auto">
-            <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
+            <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl" data-aos="fade-right" data-aos-duration="2000" style="background: rgba(222, 220, 216, 1);">
                 <img src="{{ asset('img/feedback.png') }}" class="pt-6 pl-6 h-[645px]"
                     style="background: rgba(222, 220, 216, 1);" alt="">
             </div>
-            <div class="col-span-2 lg:col-span-1">
+            <div class="col-span-2 lg:col-span-1" data-aos="fade-left" data-aos-duration="2000">
                 <div class="flex flex-col space-y-6">
                     <h2 class="text-[30px] lg:text-[52px] leading-10 lg:leading-[64px] font-medium">Just one tap to give
                         your feedback</h2>
@@ -95,7 +95,7 @@
         </div>
     </section>
     <div class="py-6 text-center mt-28 pt-36 bg-no-repeat" style="background-image: url('{{ asset('img/giggag.png') }}')">
-        <h2 class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] font-medium inline-block">Tool that dedicated to
+        <h2 class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] font-medium inline-block" data-aos="fade-down" data-aos-duration="2000">Tool that dedicated to
             help you and make your
             project building faster</h2>
         <p class="text-[18px] lg:text-[22px] leading-7 lg:leading-9 py-6">Revolutionize your workflow: experience the power
@@ -103,7 +103,7 @@
     </div>
 
     <div class="flex gap-4 container mx-auto">
-        <div class="flex-1 rounded-3xl p-10 bg-[#E4E2DF]">
+        <div class="flex-1 rounded-3xl p-10 bg-[#E4E2DF]" data-aos="zoom-in" data-aos-duration="2000">
             <div class="space-y-6 py-12">
                 <h2 class="text-[42px] leading-[54px] font-medium">A simple overview of how project is going</h2>
                 <p class="text-[22px] leading-9">Stay Informed, Stay Ahead: Get a Snapshot of Your Project's Journey
@@ -226,7 +226,7 @@
         </div>
 
 
-        <div class="flex-1 rounded-3xl p-10 bg-[#E4E2DF]">
+        <div class="flex-1 rounded-3xl p-10 bg-[#E4E2DF]" data-aos="zoom-in" data-aos-duration="2000">
             <div class="space-y-6 py-12">
                 <h2 class="text-[42px] leading-[54px] font-medium">Help and solution with <br>note in each project</h2>
                 <p class="text-[22px] leading-9">Stay Informed, Stay Ahead: Get a Snapshot of Your Project's
@@ -300,12 +300,12 @@
 
     <div class="container hidden lg:block  mx-auto bg-[#9FE870] my-6 rounded-3xl">
         <div class="grid grid-cols-12">
-            <div class="col-span-6 px-12 py-20 space-y-6">
+            <div class="col-span-6 px-12 py-20 space-y-6" data-aos="fade-right" data-aos-duration="2000">
                 <h3 class="text-[42px] leading-[54px] font-medium">A simple overview of how project is going</h3>
                 <p>Stay Informed, Stay Ahead: Get a Snapshot of Your Project's Journey</p>
                 <x-button.shadowbuttonlink title="Try it Now" route="#" />
             </div>
-            <div class="col-span-6 flex justify-end">
+            <div class="col-span-6 flex justify-end" data-aos="fade-left" data-aos-duration="2000">
                 <img src="{{ asset('img/dashboard.png') }}" class="mt-14" alt="">
             </div>
         </div>
@@ -313,7 +313,7 @@
 
     <div class="container mx-auto text-center py-12 lg:pt-[120px]">
         <h2
-            class="max-w-4xl font-semibold  text-center py-5 lg:py-10 text-[38px] leading-[44px] lg:text-[64px] lg:leading-[82px] inline-block">
+            class="max-w-4xl font-semibold  text-center py-5 lg:py-10 text-[38px] leading-[44px] lg:text-[64px] lg:leading-[82px] inline-block" data-aos="fade-right" data-aos-duration="2000">
             How the magic unfolds: Unveiling the inner workings
         </h2>
         <p class="text-[18px] lg:text-[22px] leading-7 lg:leading-9">Discover the Alchemy Behind Our Seamless Process</p>
@@ -321,21 +321,21 @@
 
     <div class="container mx-auto">
         <div class="grid grid-cols-12 gap-6">
-            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center ">
+            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center " data-aos="zoom-in" data-aos-duration="2000">
                 <img src="{{ asset('img/upload1.png') }}" alt="">
                 <h3 class="text-2xl font-semibold leading-[54px]">Upload Design</h3>
                 <p class="text-[18px] leading-7 lg:leading-8 text-center ">Upload your design and share the generated link
                     with
                     others</p>
             </div>
-            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center py-4">
+            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center py-4" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="{{ asset('img/Colaborate1.png') }}" alt="">
                 <h3 class="text-2xl font-semibold leading-[54px]">Colaborate</h3>
                 <p class="text-[18px] leading-7 lg:leading-8 text-center ">Collaborate with other members using feedbex and
                     get
                     feedback</p>
             </div>
-            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center ">
+            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center " data-aos="zoom-in" data-aos-duration="2000">
                 <img src="{{ asset('img/Success 1.png') }}" alt="">
                 <h3 class="text-2xl font-semibold leading-[54px]">Complete Project</h3>
                 <p class="text-[18px] leading-7 lg:leading-8 text-center ">After finalizing everything just upload final
@@ -358,12 +358,9 @@
             </button>
 
         </div>
-        <h2 class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] text-center font-medium py-6 mx-auto">Best in your
-            range
-            start using now</h2>
+        <h2 class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] text-center font-medium py-6 mx-auto" data-aos="fade-left" data-aos-duration="2000">Best in your range start using now</h2>
         <p class="text-[18px] lg:text-2xl leading-7 lg:leading-9 font-normal text-center	">Revolutionize your workflow:
-            experience the power of
-            consolidation</p>
+            experience the power of consolidation</p>
         {{-- pricing button start --}}
         <div class="container flex justify-center mx-auto my-5 items-center">
             <div class="px-2 text-[18px] lg:text-[22px] leading-9 font-semibold">Buy Monthly</div>
@@ -386,7 +383,7 @@
 
     <section class="container mx-auto">
         <div class="grid grid-cols-12 gap-3">
-            <div class=" col-span-12 lg:col-span-5 bg-[#E4E2DF] p-10 rounded-lg">
+            <div class=" col-span-12 lg:col-span-5 bg-[#E4E2DF] p-10 rounded-lg" data-aos="fade-right" data-aos-duration="2000">
                 <h3 class="text-[42px] leading-[54px] font-medium mt-16 lg:mt-10">Professionals</h3>
                 <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
                 <div class="space-y-3">
@@ -442,7 +439,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:block col-span-7 bg-[#9FE870] p-10 rounded-lg">
+            <div class="hidden lg:block col-span-7 bg-[#9FE870] p-10 rounded-lg" data-aos="fade-left" data-aos-duration="2000">
                 <button class="text-base border-black border rounded-full px-2 my-2 font-normal	">MOST PREMIUM</button>
                 <h3 class="text-[42px] leading-[54px] font-medium ">Unlimited</h3>
                 <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">

@@ -1,6 +1,6 @@
 <section class="bg-none mt-[80px] lg:mt-[100px]" style="background-image:url('{{ asset('img/giggag.png') }}')">
     <div class="container mx-auto text-center pt-20  py-3 lg:py-[100px] mt-14">
-        <h2 class="font-semibold text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px]">Frequently asked
+        <h2 class="font-semibold text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px]" data-aos="fade-down" data-aos-duration="2000">Frequently asked
             questions
         </h2>
         <p class="text-[18px] lg:text-[22px] leading-6 lg:leading-9 py-4 lg:py-2">Please check the answers from us, If
@@ -12,7 +12,7 @@
     <div id="accordion-flush" data-accordion="collapse"
         data-active-classes="bg-transparent dark:bg-gray-900 text-gray-900 dark:text-white"
         data-inactive-classes="text-gray-500 dark:text-gray-400">
-        <h2 id="accordion-flush-heading-0" class=" bg-transparent">
+        <h2 id="accordion-flush-heading-0" class=" bg-transparent" data-aos="fade-right" data-aos-duration="1000">
             <button type="button"
                 class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-y-2 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
@@ -36,7 +36,7 @@
                     developing websites even faster with components on top of Tailwind CSS.</p>
             </div>
         </div>
-        <h2 id="accordion-flush-heading-2">
+        <h2 id="accordion-flush-heading-2" data-aos="fade-right" data-aos-duration="2000">
             <button type="button"
                 class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b-2 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
@@ -58,7 +58,7 @@
                     the utility classes from Tailwind CSS and components from Flowbite.</p>
             </div>
         </div>
-        <h2 id="accordion-flush-heading-3">
+        <h2 id="accordion-flush-heading-3" data-aos="fade-right" data-aos-duration="3000">
             <button type="button"
                 class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b-2 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
@@ -88,7 +88,7 @@
                 </ul>
             </div>
         </div>
-        <h2 id="accordion-flush-heading-4">
+        <h2 id="accordion-flush-heading-4" data-aos="fade-right" data-aos-duration="4000">
             <button type="button"
                 class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b-2 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
@@ -118,7 +118,7 @@
                 </ul>
             </div>
         </div>
-        <h2 id="accordion-flush-heading-5">
+        <h2 id="accordion-flush-heading-5" data-aos="fade-right" data-aos-duration="5000">
             <button type="button"
                 class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b-2 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-5" aria-expanded="false"
@@ -148,7 +148,7 @@
                 </ul>
             </div>
         </div>
-        <h2 id="accordion-flush-heading-6">
+        <h2 id="accordion-flush-heading-6" data-aos="fade-right" data-aos-duration="6000">
             <button type="button"
                 class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b-2 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-6" aria-expanded="false"
@@ -178,7 +178,7 @@
                 </ul>
             </div>
         </div>
-        <h2 id="accordion-flush-heading-7">
+        <h2 id="accordion-flush-heading-7" data-aos="fade-right" data-aos-duration="7000">
             <button type="button"
                 class="flex text-left lg:items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b-2 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
                 data-accordion-target="#accordion-flush-body-7" aria-expanded="false"

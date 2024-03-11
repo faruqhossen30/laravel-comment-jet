@@ -3,7 +3,7 @@
 @section('content')
 
     <section class="container mx-auto">
-        <div class="py-[30px] lg:p-[54px] bg-[#9FE870] rounded-3xl my-8">
+        <div class="py-[30px] lg:p-[54px] bg-[#9FE870] rounded-3xl my-8" data-aos="fade-down" data-aos-duration="2000">
             <div class="px-6 lg:px-4 text-center">
                 <span class="text-[18px] lg:text-[22px] leading-[36px]">Frequently Asked Questions</span>
                 <h2 class="text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] font-medium py-2">What do you need
@@ -21,13 +21,13 @@
             </div>
         </div>
         <div class="text-center py-7">
-            <h2 class="text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] font-medium">Trending Topics</h2>
+            <h2 class="text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] font-medium" data-aos="fade-right" data-aos-duration="2000">Trending Topics</h2>
             <p class=" pt-[18px] text-[18px] lg:text-[22px] leading-6 lg:leading-9">Here's whet other people are ﬁnding most
                 useful right now:</p>
         </div>
 
         <div class="hidden lg:grid grid-cols-12 gap-8">
-            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6">
+            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="flex space-x-3 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                         class="w-6 h-6 bg-[#9FE870] rounded-full p-1 text-white">
@@ -40,7 +40,7 @@
                 <span class="text-sm leading-[26px]">New to Typeform? Here's how to get started on your first
                     creation.</span>
             </div>
-            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6">
+            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="flex space-x-3 items-start">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                         class="min-w-6 h-6 bg-[#9FE870] rounded-full p-1 text-white">
@@ -53,7 +53,7 @@
                 </div>
                 <span class="text-sm leading-[26px]">Discover an effortless way to generate tailored reports for survey and quiz participant...</span>
             </div>
-            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6">
+            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="flex space-x-3 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                         class="w-6 h-6 bg-[#9FE870] rounded-full p-1 text-white">
@@ -65,7 +65,7 @@
                 </div>
                 <span class="text-sm leading-[26px]">How to embed your Typeform on Wordpress, Squarespace, Webflow, Shopify, or Google Sites</span>
             </div>
-            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6">
+            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="flex space-x-3 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                         class="w-6 h-6 bg-[#9FE870] rounded-full p-1 text-white">
@@ -77,7 +77,7 @@
                 </div>
                 <span class="text-sm leading-[26px]">Also known as question branching, Logic lets you give users a more personalized experience that saves time.</span>
             </div>
-            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6">
+            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="flex space-x-3 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                         class="w-6 h-6 bg-[#9FE870] rounded-full p-1 text-white">
@@ -89,7 +89,7 @@
                 </div>
                 <span class="text-sm leading-[26px]">Hidden Fields let you use data you’ve already collected, to track information and make your typeforms more personal.</span>
             </div>
-            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6">
+            <div class="col-span-4 bg-[#E4E2DF] rounded-[20px] p-6" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="flex space-x-3 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                         class="w-6 h-6 bg-[#9FE870] rounded-full p-1 text-white">

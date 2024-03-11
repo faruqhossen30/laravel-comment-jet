@@ -3,6 +3,13 @@
     <x-breadcrumb pageone="Blog" pageoneRoute="{{ route('blog.index') }}" pagetwo="Edit" />
 @endsection
 @section('content')
+    <div>
+        @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                <div>{{ $error }}</div>
+            @endforeach
+        @endif
+    </div>
     <div class="flex flex-col gap-6">
         <div class="card">
             <div class="card-header">
@@ -11,10 +18,35 @@
                     <form action="{{ route('blog.update', $blog->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
-                        <x-form.input name="title" label="Title" value="{{ $blog->title }}" />
+
+
+
+
+                        {{-- <x-form.input name="title" label="Title" value="{{ $blog->title }}" />
                         <x-form.select name="category_id" label="Select Category" :data="$categories" :id="$blog->category_id" />
-                        <textarea name="description" id="editor" cols="30" rows="10" >{!! $blog->description !!}</textarea>
-                        <input name="thumbnail" class="dropify space-x-4" type="file" id="myDropify" data-default-file="{{ asset('uploads/blog/' . $blog->thumbnail) }}">
+                        <textarea name="description" id="editor" cols="30" rows="10">{!! $blog->description !!}</textarea>
+                        <input name="thumbnail" class="dropify space-x-4" type="file" id="myDropify"
+                            data-default-file="{{ asset('uploads/blog/' . $blog->thumbnail) }}"> --}}
+
+
+
+
+                        <div class="grid grid-cols-12 gap-4">
+                            <div class="col-span-9 space-y-2">
+                                <x-form.input name="title" label="Title" value="{{ $blog->title }}" />
+                                <label for="description"
+                                    class="text-gray-500 dark:text-gray-500 text-sm font-medium">Description</label>
+                                <textarea name="description" id="editor" cols="30" rows="10">{!! $blog->description !!}</textarea>
+                            </div>
+                            <div class="col-span-3 pt-1 space-y-2">
+                                <x-form.select name="category_id" label="Select Category" :data="$categories"
+                                    :id="$blog->category_id" />
+                                <label for="thumbnail" class="text-gray-500 dark:text-gray-500 text-sm font-medium">Image</label>
+                                <input name="thumbnail" class="dropify space-x-4" type="file" id="myDropify"
+                                    data-default-file="{{ asset('uploads/blog/' . $blog->thumbnail) }}">
+                            </div>
+                        </div>
+
                         <x-form.submit-button />
                     </form>
                 </div>

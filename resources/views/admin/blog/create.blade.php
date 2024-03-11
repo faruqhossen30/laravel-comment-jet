@@ -10,11 +10,21 @@
 
                     <form action="{{ route('blog.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <x-form.input name="title" label="Title" />
-                        <x-form.select name="category_id" label="Select Category" :data="$categories" />
-                        <textarea name="description" id="editor" cols="30" rows="10"></textarea>
-                        {{-- <input class="" type=""  id="" name=""> --}}
-                        <input name="thumbnail" class="dropify space-x-4" type="file" id="myDropify">
+                        <div class="grid grid-cols-12 gap-4">
+                            <div class="col-span-9 space-y-2">
+                                <x-form.input name="title" label="Title" />
+                                <label for="description" class="text-gray-500 dark:text-gray-500 text-sm font-medium">Description</label>
+                                <textarea class="" name="description" id="editor" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="col-span-3 pt-1 space-y-2">
+                                <x-form.select name="category_id" label="Select Category" :data="$categories" />
+                                {{-- <input class="" type=""  id="" name=""> --}}
+                                <label for="thumbnail" class="text-gray-500 dark:text-gray-500 text-sm font-medium">Image</label>
+                                <input name="thumbnail" class="dropify" type="file" id="myDropify">
+                            </div>
+
+                        </div>
+
                         <x-form.submit-button />
 
                     </form>
