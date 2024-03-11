@@ -16,4 +16,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('category', CategoryController::class);
     // Route::resource('role', RoleController::class);
+    Route::get('settings',function(){
+        return view('admin.settings.settings');
+    })->name('settings');
 });

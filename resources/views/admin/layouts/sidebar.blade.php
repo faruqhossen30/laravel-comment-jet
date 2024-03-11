@@ -2,7 +2,7 @@
 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white
 --}}
 <aside id="sidebar"
-    class="fixed top-0 left-0 z-20 flex flex-col flex-shrink-0 hidden w-64 h-full pt-16 font-normal duration-75 lg:flex transition-width"
+    class="fixed top-0 left-0 z-20 flex-col flex-shrink-0 hidden w-64 h-full pt-16 font-normal duration-75 lg:flex transition-width"
     aria-label="Sidebar">
     <div
         class="relative flex flex-col flex-1 min-h-0 pt-0 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
@@ -61,7 +61,7 @@ w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text
                             </li>
                             <li>
                                 <a href="{{route('role.index')}}"
-                                    class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group  hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Roles</a>
+                                    class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Roles</a>
                             </li>
                         </ul>
                     </li>
@@ -99,7 +99,7 @@ w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text
 
 
                     <li>
-                        <a href="#"
+                        <a href="{{ route('settings') }}"
                             class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700 ">
                             <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text
             <form method="POST" action="{{ route('logout') }}" class="w-full">
                 @csrf
                 <button
-                    class="flex w-full items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
+                    class="flex items-center w-full p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9" />
