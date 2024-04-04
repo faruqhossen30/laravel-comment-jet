@@ -13,8 +13,8 @@
                         <div class="grid grid-cols-12 gap-4">
                             <div class="col-span-9 space-y-2">
                                 <x-form.input name="title" label="Title" />
-                                <label for="description" class="text-gray-500 dark:text-gray-500 text-sm font-medium">Description</label>
-                                <textarea class="" name="description" id="editor" cols="30" rows="10"></textarea>
+                                <label for="description"class="text-gray-500 dark:text-gray-500 text-sm font-medium">Description</label>
+                                <textarea  class="ckeditor" id="editor"  name="description" cols="30" rows="10"></textarea>
                             </div>
                             <div class="col-span-3 pt-1 space-y-2">
                                 <x-form.select name="category_id" label="Select Category" :data="$categories" />
@@ -35,13 +35,10 @@
     </div>
 @endsection
 @push('styles')
-    <script src="{{ asset('js/ckeditor.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('css/ckeditor.css') }}">
+<script src="{{asset('ckeditor/ckeditor.js')}}"></script>
     <link rel="stylesheet" href="{{ asset('css/dropify.min.css') }}">
     <style>
-        .ck-editor__editable_inline {
-            height: 300px;
-        }
+
 
         .dropify-message p {
             font-size: 24px
@@ -54,13 +51,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="{{ asset('js/dropify.min.js') }}"></script>
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .catch(error => {
-                console.log(error);
-            });
-    </script>
+
     <script>
         $(document).ready(function() {
             $('.dropify').dropify({

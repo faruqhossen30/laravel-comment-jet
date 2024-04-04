@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 @section('breadcrumb')
-    <x-breadcrumb pageone="Blog" pageoneRoute="" pagetwo="Edit" />
+    <x-breadcrumb pageone="Role" pageoneRoute="" pagetwo="Edit" />
 @endsection
 @section('content')
     <div class="flex flex-col gap-6">

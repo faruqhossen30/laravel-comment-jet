@@ -2,9 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
 class PermissionSeeder extends Seeder
 {
@@ -47,5 +49,15 @@ class PermissionSeeder extends Seeder
         });
 
         Permission::insert($web->toArray());
+
+        $r = Role::create([
+            'name'=>'Super Admin'
+        ]);
+        $permissions = Permission::pluck('id','id')->all();
+        $r->syncPermissions($permissions);
+
+        $user = User::firstWhere('id',1);
+
+        $user->assignRole(1);
     }
 }
