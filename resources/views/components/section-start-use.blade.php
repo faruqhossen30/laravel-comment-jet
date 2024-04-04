@@ -7,16 +7,17 @@
             <p class="text-[18px] lg:text-[22px] leading-[28px] lg:leading-9 py-2 text-white">Discover the Alchemy Behind Our Seamless Process</p>
         </div>
         <div class="flex justify-center  ">
-            <div>
+            <div class="pb-12">
                 <x-button.shadowbuttonlink title="Try it Now" route="#" classname="bg-[#9FE870]" />
             </div>
         </div>
     </div>
-    <div class=" hidden lg:flex gap-7 mt-16 ">
-        <div> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
-        <div> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
-        <div> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
-        <div> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
-
+    <div class="hidden lg:block">
+        <div class="flex gap-7 owl-carousel owl-theme" id="featureSlider">
+            <div class="item"> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
+            <div class="item"> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
+            <div class="item"> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
+            <div class="item"> <img src="{{ asset('img/uplodesuccess2.png') }}" alt="uploded"></div>
+        </div>
     </div>
 </section>

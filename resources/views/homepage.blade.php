@@ -23,7 +23,8 @@
     </section>
 
     <section class="container mx-auto">
-        <img data-aos="zoom-in" data-aos-duration="2000" src="{{ asset('img/homewindow.png') }}" class="w-full" alt="">
+        <img data-aos="zoom-in" data-aos-duration="2000" src="{{ asset('img/homewindow.png') }}" class="w-full"
+            alt="">
     </section>
     <section class="container mx-auto text-center py-[73px] lg:py-[120px]">
         <h2 data-aos="fade-right" data-aos-duration="2000"
@@ -35,7 +36,8 @@
 
     <section class="container mx-auto">
         <div class="grid grid-cols-2 items-center gap-8 lg:gap-32">
-            <div  data-aos="fade-right" data-aos-duration="2000" class="col-span-2 lg:col-span-1 p-6 rounded-3xl" style="background: rgba(222, 220, 216, 1);">
+            <div data-aos="fade-right" data-aos-duration="2000" class="col-span-2 lg:col-span-1 p-6 rounded-3xl"
+                style="background: rgba(222, 220, 216, 1);">
                 <img src="{{ asset('img/share-member.png') }}" class="p-6 w-full"
                     style="background: rgba(222, 220, 216, 1);" alt="">
             </div>
@@ -66,8 +68,8 @@
                     <x-button.shadowbuttonlink title="Try it Now" route="#" />
                 </div>
             </div>
-            <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl order-1 lg:order-2" data-aos="fade-left" data-aos-duration="2000"
-                style="background: rgba(222, 220, 216, 1);">
+            <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl order-1 lg:order-2" data-aos="fade-left"
+                data-aos-duration="2000" style="background: rgba(222, 220, 216, 1);">
                 <img src="{{ asset('img/homewindow.png') }}" class="pt-6 pl-6 h-[601px]"
                     style="background: rgba(222, 220, 216, 1);" alt="">
             </div>
@@ -77,7 +79,8 @@
 
     <section class="container mx-auto">
         <div class="grid grid-cols-2 items-center gap-8 lg:gap-32 container mx-auto">
-            <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl" data-aos="fade-right" data-aos-duration="2000" style="background: rgba(222, 220, 216, 1);">
+            <div class="col-span-2 lg:col-span-1 pt-6 pl-6 rounded-3xl" data-aos="fade-right" data-aos-duration="2000"
+                style="background: rgba(222, 220, 216, 1);">
                 <img src="{{ asset('img/feedback.png') }}" class="pt-6 pl-6 h-[645px]"
                     style="background: rgba(222, 220, 216, 1);" alt="">
             </div>
@@ -95,7 +98,8 @@
         </div>
     </section>
     <div class="py-6 text-center mt-28 pt-36 bg-no-repeat" style="background-image: url('{{ asset('img/giggag.png') }}')">
-        <h2 class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] font-medium inline-block" data-aos="fade-down" data-aos-duration="2000">Tool that dedicated to
+        <h2 class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] font-medium inline-block"
+            data-aos="fade-down" data-aos-duration="2000">Tool that dedicated to
             help you and make your
             project building faster</h2>
         <p class="text-[18px] lg:text-[22px] leading-7 lg:leading-9 py-6">Revolutionize your workflow: experience the power
@@ -312,8 +316,8 @@
     </div>
 
     <div class="container mx-auto text-center py-12 lg:pt-[120px]">
-        <h2
-            class="max-w-4xl font-semibold  text-center py-5 lg:py-10 text-[38px] leading-[44px] lg:text-[64px] lg:leading-[82px] inline-block" data-aos="fade-right" data-aos-duration="2000">
+        <h2 class="max-w-4xl font-semibold  text-center py-5 lg:py-10 text-[38px] leading-[44px] lg:text-[64px] lg:leading-[82px] inline-block"
+            data-aos="fade-right" data-aos-duration="2000">
             How the magic unfolds: Unveiling the inner workings
         </h2>
         <p class="text-[18px] lg:text-[22px] leading-7 lg:leading-9">Discover the Alchemy Behind Our Seamless Process</p>
@@ -321,21 +325,24 @@
 
     <div class="container mx-auto">
         <div class="grid grid-cols-12 gap-6">
-            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center " data-aos="zoom-in" data-aos-duration="2000">
+            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center " data-aos="zoom-in"
+                data-aos-duration="2000">
                 <img src="{{ asset('img/upload1.png') }}" alt="">
                 <h3 class="text-2xl font-semibold leading-[54px]">Upload Design</h3>
                 <p class="text-[18px] leading-7 lg:leading-8 text-center ">Upload your design and share the generated link
                     with
                     others</p>
             </div>
-            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center py-4" data-aos="zoom-in" data-aos-duration="2000">
+            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center py-4" data-aos="zoom-in"
+                data-aos-duration="2000">
                 <img src="{{ asset('img/Colaborate1.png') }}" alt="">
                 <h3 class="text-2xl font-semibold leading-[54px]">Colaborate</h3>
                 <p class="text-[18px] leading-7 lg:leading-8 text-center ">Collaborate with other members using feedbex and
                     get
                     feedback</p>
             </div>
-            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center " data-aos="zoom-in" data-aos-duration="2000">
+            <div class=" col-span-12 lg:col-span-4 flex flex-col justify-center items-center " data-aos="zoom-in"
+                data-aos-duration="2000">
                 <img src="{{ asset('img/Success 1.png') }}" alt="">
                 <h3 class="text-2xl font-semibold leading-[54px]">Complete Project</h3>
                 <p class="text-[18px] leading-7 lg:leading-8 text-center ">After finalizing everything just upload final
@@ -358,7 +365,8 @@
             </button>
 
         </div>
-        <h2 class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] text-center font-medium py-6 mx-auto" data-aos="fade-left" data-aos-duration="2000">Best in your range start using now</h2>
+        <h2 class="max-w-4xl text-[38px] lg:text-[64px] leading-[44px] lg:leading-[82px] text-center font-medium py-6 mx-auto"
+            data-aos="fade-left" data-aos-duration="2000">Best in your range start using now</h2>
         <p class="text-[18px] lg:text-2xl leading-7 lg:leading-9 font-normal text-center	">Revolutionize your workflow:
             experience the power of consolidation</p>
         {{-- pricing button start --}}
@@ -383,7 +391,8 @@
 
     <section class="container mx-auto">
         <div class="grid grid-cols-12 gap-3">
-            <div class=" col-span-12 lg:col-span-5 bg-[#E4E2DF] p-10 rounded-lg" data-aos="fade-right" data-aos-duration="2000">
+            <div class=" col-span-12 lg:col-span-5 bg-[#E4E2DF] p-10 rounded-lg" data-aos="fade-right"
+                data-aos-duration="2000">
                 <h3 class="text-[42px] leading-[54px] font-medium mt-16 lg:mt-10">Professionals</h3>
                 <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
                 <div class="space-y-3">
@@ -439,7 +448,8 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:block col-span-7 bg-[#9FE870] p-10 rounded-lg" data-aos="fade-left" data-aos-duration="2000">
+            <div class="hidden lg:block col-span-7 bg-[#9FE870] p-10 rounded-lg" data-aos="fade-left"
+                data-aos-duration="2000">
                 <button class="text-base border-black border rounded-full px-2 my-2 font-normal	">MOST PREMIUM</button>
                 <h3 class="text-[42px] leading-[54px] font-medium ">Unlimited</h3>
                 <hr class="h-px my-6 bg-gray-400 border-0 dark:bg-gray-700">
@@ -540,3 +550,96 @@
     <x-section-start-use />
 
 @endsection
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <style type="text/css">
+        .slider {
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .owl-nav .owl-next {
+            position: absolute;
+            top: calc(50% - 20px);
+            right: 0;
+            margin-right: -20px !important;
+            width: 40px;
+            height: 40px;
+            opacity: .8;
+            border-radius: 50% !important;
+            background-color: white !important;
+            color: gray !important;
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+        /* .owl-nav .owl-next span{
+                                                        font-size: 30px;
+                                                    } */
+
+        .owl-nav .owl-prev {
+            position: absolute;
+            top: calc(50% - 20px);
+            left: 0;
+            margin-left: -20px !important;
+            width: 40px;
+            height: 40px;
+            opacity: .8;
+            border-radius: 50% !important;
+            background-color: white !important;
+            color: gray !important;
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+        .owl-nav .owl-prev:hover {
+            background-color: #FF003A !important;
+            color: gray !important;
+        }
+
+        .owl-nav .owl-next:hover {
+            background-color: #FF003A !important;
+            color: white !important;
+        }
+
+        .custompacity {
+            opacity: .2;
+        }
+    </style>
+@endpush
+
+
+@push('scripts')
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script>
+        $('#featureSlider').owlCarousel({
+            items: 4,
+            loop: false,
+            center: true,
+            autoplay: true,
+            dots: false,
+            loop: true,
+            margin: 10,
+            nav: true,
+            URLhashListener: true,
+            autoplayHoverPause: true,
+            startPosition: 'URLHash',
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 4,
+                }
+            }
+        });
+    </script>
+@endpush
