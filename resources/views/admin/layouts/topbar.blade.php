@@ -20,7 +20,7 @@
                 <a href="{{ route('dashboard') }}" class="flex items-center ml-2 md:mr-24">
                     <img src="{{ asset('img/logo.png') }}" class="h-6 mr-3" alt="Comment Jet" />
                     <span
-                        class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-500 dark:text-gray-200 uppercase">Comment
+                        class="self-center text-xl font-semibold text-gray-500 uppercase sm:text-2xl whitespace-nowrap dark:text-gray-200">Comment
                         Jet</span>
                 </a>
                 <form action="#" method="GET" class="hidden lg:block lg:pl-3.5">
@@ -371,9 +371,9 @@
                                     role="menuitem">Dashboard</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="{{ route('profile-settings') }}"
                                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                    role="menuitem">Settings</a>
+                                    role="menuitem">Profile</a>
                             </li>
                             <li>
                                 <a href="#"

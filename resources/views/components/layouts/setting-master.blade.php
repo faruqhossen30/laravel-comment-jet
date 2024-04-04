@@ -93,8 +93,8 @@
         {{-- sidebar end --}}
 
         <div class="col-span-5 px-4 pl-6 border-b dark:border-gray-500">
-            <h3 class="py-2 border-b-2 dark:border-gray-500">Home Settings</h3>
-
+            <h3 class="py-2 border-b-2 dark:border-gray-500">{{ $title ?? 'Settings' }}</h3>
+            {{ $slot }}
         </div>
     </div>
     {{-- sidebar end --}}
