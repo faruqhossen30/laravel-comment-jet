@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\admin\FaqController;
 use App\Http\Controllers\Admin\Setting\SettingController;
 use App\Http\Controllers\Admin\Setting\WebsiteSettingController;
+use App\Http\Controllers\AdminProfileController;
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -30,4 +31,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
             return view('admin.settings.profilesettings');
         })->name('profile-settings');
     });
+
+    Route::get('profile',[AdminProfileController::class,'profile'])->name('admin.profile');
+    Route::put('profile/update/{id}',[AdminProfileController::class,'UpdateProfile'])->name('admin.profile.update');
+    Route::get('profile/reset-password/{id}',[AdminProfileController::class,'resetpasswordProfile'])->name('admin.profile.resetpassword');
+    Route::put('profile/change-password/{id}',[AdminProfileController::class,'changepasswordProfile'])->name('admin.profile.changepassword');
+
 });
